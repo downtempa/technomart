@@ -16,13 +16,12 @@
                     <form action="/echo" method="post">
                         <button type="submit"></button>
                         <label for="search-field">
-                            Поиск:
                         </label>
-                        <input type="search" name="search-field" id="search-field">
+                        <input type="search" name="search-field" id="search-field" placeholder="Поиск:">
                     </form>
                     <div class="user-controls">
-                        <a href="#" class="bookmarks">Закладки: 0</a>
-                        <a href="#" class="cart">Корзина: 0</a>
+                        <a href="#" class="bookmarks">Закладки: <span>0</span></a>
+                        <a href="#" class="cart">Корзина: <span>0</span></a>
                         <a href="#" class="header-btn checkout">Оформить заказ</a>
                     </div>
                 </div>
@@ -76,58 +75,56 @@
                 <div class="promo-block">
                     <div class="left-col">
                         <div class="promo materials">
-                            <p>Материалы</p>
+                            <h4>Материалы</h4>
                             <a href="#">На любой вкус</a>
                         </div>
                         <div class="promo tool">
-                            <p>Инструмент</p>
+                            <h4>Инструмент</h4>
                             <a href="#">На все случаи</a>
                         </div>
 <!--  слайдер промо блок  -->
                         <div class="promo-block-slider">
                             <input type="radio" name="promo" id="promo-slide-1">
                             <input type="radio" name="promo" id="promo-slide-2">
-                                <div class="promo-slides">
-                                    <div class="slide promo-slide-1">
-                                        <div class="slide-content">
-                                            <!--  картинкой или фоном? картинку в общий див или отдельный?  -->
-                                            <img src="http://placehold.it/150x100" alt="Брутальный мужик с дрелью">
-                                            <div class="slide-description">
-                                                <p><span class="slide-title">Дрели</span></p>
-                                                <p>Соседям на радость</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="slide promo-slide-2">
-                                        <div class="slide-content">
-                                            <img src="http://placehold.it/150x100" alt="Брутальный мужик с перфоратором">
-                                            <p>
-                                                <span class="slide-title">Перфораторы</span>
-                                            </p>    
-                                            <p>Настоящие мужские игрушки</p>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="content-btn slider-btn">Открыть каталог</a>
-                                    <a href="#" class="slider-arrow left-arrow"></a>
-                                    <a href="#" class="slider-arrow right-arrow"></a>
-                                </div>
                             <div class="promo-slider-controls">
                                 <label for="promo-slide-1"></label>
                                 <label for="promo-slide-2"></label>
+                            </div>
+                            <div class="promo-slides">
+                                <div class="slide promo-slide-1">
+                                    <div class="slide-content">
+                                        <!--  картинкой или фоном? картинку в общий див или отдельный?  -->
+                                        <img src="http://placehold.it/150x100" alt="Брутальный мужик с дрелью">
+                                        <div class="slide-description">
+                                            <h2>Дрели</h2>
+                                            <p>Соседям на радость</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide promo-slide-2">
+                                    <div class="slide-content">
+                                        <img src="http://placehold.it/150x100" alt="Брутальный мужик с перфоратором">
+                                        <h2>Перфораторы</h2> 
+                                        <p>Настоящие мужские игрушки</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="content-btn slider-btn">Открыть каталог</a>
+                                <a href="#" class="slider-arrow left-arrow"></a>
+                                <a href="#" class="slider-arrow right-arrow"></a>
                             </div>
                         </div>
                     </div>
                     <div class="right-col">
                         <div class="promo technics">
-                            <p>Техника</p>
+                            <h4>Техника</h4>
                             <a href="#">Для стройки</a>
                         </div>
                         <div class="promo discounts">
-                            <p>Скидка 50%</p>
+                            <h4>Скидка 50%</h4>
                             <a href="#">На 350 товаров</a>
                         </div>
                         <div class="promo delivery">
-                            <p>Доставка</p>
+                            <h4>Доставка</h4>
                             <a href="#">Бесплатно</a>
                         </div>
                     </div>
@@ -150,7 +147,7 @@
                                     <div class="item-image">
                                         <img src="http://placehold.it/150x100" alt="Перфоратор BOSCH BFG 9000">
                                     </div>
-                                    <div class="item-title">Перфоратор BOSCH BFG 9000</div>
+                                    <h3>Перфоратор BOSCH BFG 9000</h3>
                                     <div class="old-price">32500 р.</div>
                                     <div class="price">22500 р.</div>
                                 </div>
@@ -166,7 +163,7 @@
                                     <div class="item-image">
                                         <img src="http://placehold.it/150x100" alt="Перфоратор BOSCH BFG 3000">
                                     </div>
-                                    <div class="item-title">Перфоратор BOSCH BFG 3000</div>
+                                    <h3>Перфоратор BOSCH BFG 3000</h3>
                                     <div class="old-price">22500 р.</div>
                                     <div class="price">15500 р.</div>
                                 </div>
@@ -182,7 +179,7 @@
                                     <div class="item-image">
                                         <img src="http://placehold.it/150x100" alt="Перфоратор BOSCH BFG 6000">
                                     </div>
-                                    <div class="item-title">Перфоратор BOSCH BFG 6000</div>
+                                    <h3>Перфоратор BOSCH BFG 6000</h3>
                                     <div class="old-price">30500 р.</div>
                                     <div class="price">25500 р.</div>
                                 </div>
@@ -198,7 +195,7 @@
                                     <div class="item-image">
                                         <img src="http://placehold.it/150x100" alt="Перфоратор BOSCH BFG 2000">
                                     </div>
-                                    <div class="item-title">Перфоратор BOSCH BFG 2000</div>
+                                    <h3>Перфоратор BOSCH BFG 2000</h3>
                                     <div class="old-price"></div>
                                     <div class="price">12500 р.</div>
                                 </div>
