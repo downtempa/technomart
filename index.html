@@ -3,6 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>Техномарт</title>
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -14,11 +17,9 @@
                     <div class="main-header-logo">
                         <a href="#" title="Техномарт">Техномарт</a>
                     </div>
-                    <form action="/echo" method="post">
-                        <button type="submit"></button>
-                        <label for="search-field">
-                        </label>
-                        <input type="search" name="search-field" id="search-field" placeholder="Поиск:">
+                    <form action="/echo" method="post" name="header-search" tabindex="1">
+                        <button type="submit"><i class="icon-search"></i></button>
+                        <input type="search" name="search-field" id="search-field" placeholder="Поиск:" tabindex="1">
                     </form>
                     <div class="user-controls">
                         <a href="#" class="bookmarks">Закладки: <span>0</span></a>
