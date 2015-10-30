@@ -292,7 +292,7 @@ nav.main-navigation li {
 /*футер*/
 
 footer.main-footer {
-    margin-top: 20px;
+
 }
 /*верхния часть футера*/
 .footer-top {
@@ -381,4 +381,104 @@ nav.footer-main-navigation {
     float: right;
     
     width: 140px;
+}
+
+/* КАТАЛОГ*/
+/*контент шапки*/
+/*логин*/
+
+.user-block-logged {
+    float: right;
+    
+    width: 300px;
+    
+    background-color: red;
+}
+
+/*основной контент*/
+
+nav.breadcrumbs li {
+    display: inline-block;
+    
+    margin-right: 20px;
+}
+
+/*фильтр*/
+
+.catalog-filter-form {
+    float: left;
+    
+    width: 220px;
+    
+    background-color: #cccccc;
+}
+
+
+
+/*каталог товаров*/
+
+.catalog-products {
+    float: right;
+    
+    width: 700px;
+    
+    background-color: #d85c5c;
+}
+
+.catalog-items ul, .catalog-sorting-types ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.catalog-sorting-title {
+    float: left;
+}
+
+.catalog-sorting-types {
+    float: right;
+}
+
+.catalog-sorting-types li {
+    display: inline-block;
+    
+    margin-right: 15px;
+}
+
+.catalog-items {
+    font-size: 0;
+    
+}
+
+.catalog-items .catalog-item {
+    font-size: 18px;
+}
+
+.catalog-items li {
+    display: inline-block;
+    vertical-align: top;
+    
+    margin-right: 20px;
+    margin-top: 20px;
+    
+}
+
+.catalog-items li:nth-child(3n) {
+    margin-right: 0;
+    
+}
+
+.catalog-pagination li {
+    display: inline-block;
+    
+    margin-right: 15px;
+}
+
+.category-description {
+    background-color: #f2f6f8;
+}
+
+
+.add-to-cart-popup {
+    display: none;
 }
