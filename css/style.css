@@ -1,4 +1,8 @@
 body {
+    min-width: 960px;
+    padding: 0;
+    margin: 0;
+    
     font-family: "PT Sans", Arial, Helvetica, sans-serif;
     font-size: 13px;
     color: #000000;
@@ -22,4 +26,359 @@ h2 {
     color: #000000;
     line-height: 24px;
     text-transform: uppercase;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/*верхняя панелька*/
+
+.control-of-purchases {
+
+    background-color: deepskyblue;
+}
+
+.main-header-logo{
+    float: left;
+    
+    width: 220px;
+    
+    background-color: coral;
+    
+}
+
+.control-of-purchases form {
+    float: left;
+    
+    width: 270px;
+    
+    background-color: #eaa5a5;    
+}
+
+.user-controls {
+    float: right;
+    
+    width: 450px;
+    
+    background-color: #76706e;
+}
+
+/*контент шапки*/
+
+.header-shop-info {
+    float: left;
+    
+    width: 300px;
+    margin-right: 20px;
+    
+    background-color: #cccccc;
+}
+
+.header-contact-information {
+    float: left;
+    
+    width: 300px;
+    
+    background-color: blue;
+}
+
+.user-block {
+    float: right;
+    
+    width: 300px;
+    
+    background-color: red;
+}
+
+/*основное меню*/
+
+nav.main-navigation {
+    background-color: aqua;
+}
+/*каким маржином лучше отталкивать левым или правым?*/
+nav.main-navigation li {
+    float: left;
+    
+    margin-right: 20px;
+}
+
+/* промоблок*/
+
+.promo {
+    width: 300px;
+    margin-bottom: 20px;
+    
+    background-color: darkorchid;
+}
+
+.promo h4 {
+    margin: 0;
+}
+
+/*левая колонка*/
+
+.promo-block .left-col {
+    
+    float: left;
+    width: 621px;
+}
+
+
+.left-col .promo {
+    float: left;
+}
+
+.promo.materials {
+    margin-right: 20px;
+}
+
+/* промо слайдер*/
+
+.promo-slide-2 {
+    display: none;
+}
+
+/*правая колонка*/
+
+.promo-block .right-col {
+    float: right;
+    
+    width: 300px;
+}
+
+/*популярные товары*/
+.popular-goods {
+    margin-bottom: 20px;
+}
+
+.popular-goods-header, .popular-makers-header {
+    margin-bottom: 20px;
+    
+    background-color: aqua;
+}
+
+.popular-goods-header h2, .popular-makers-header h2 {
+    float: left;
+}
+
+.popular-goods-header a, .popular-makers-header a {
+    float: right;
+}
+
+/*каталог популярных товаров*/
+.popular-goods-catalog {
+    font-size: 0;
+}
+
+.popular-goods-catalog ul, .popular-makers-catalog ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.popular-goods-catalog li {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    
+    font-size: 18px;
+}
+
+.popular-goods-catalog li:last-child {
+    margin-right: 0;
+}
+
+.catalog-item {
+    width: 220px;
+    min-height: 318px;
+    
+    background-color: aquamarine;
+}
+
+/*популярные производители*/
+
+.popular-makers {
+    margin-bottom: 20px;
+}
+
+.popular-makers-catalog {
+    font-size: 0;
+}
+
+.popular-makers-catalog li {
+    display: inline-block;
+    vertical-align: top;
+    
+    margin-right: 20px;
+    margin-top: 10px;
+    
+    
+}
+
+.popular-makers-catalog li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.popular-makers-catalog a {
+    display: block;
+    
+    width: 220px;
+    min-height: 145px;
+    
+    background-color: #cccccc;
+} 
+
+/*сервисы*/
+
+.services {
+    margin-bottom: 20px;
+    
+    background-color: aquamarine;
+}
+
+/*сладер сервис*/
+
+.services-slide-2, .services-slide-3 {
+    display: none;
+}
+
+.slider-left-col {
+    float: left;
+    
+    width: 300px;
+    
+    background-color: #79d875;
+}
+
+.services-slides {
+    float: right;
+    
+    width: 620px;
+    
+    background-color: cadetblue;
+}
+
+/* информация о компании*/
+
+.company-info .benefits {
+    float: left;
+    
+    width: 540px;
+    
+    background-color: green;
+}
+
+.company-info .contacts {
+    float: right;
+    
+    width: 300px;
+    
+    background-color: green;
+}
+
+.company-info-action {
+    display: none;
+}
+
+/*футер*/
+
+footer.main-footer {
+    margin-top: 20px;
+}
+/*верхния часть футера*/
+.footer-top {
+    background-color: darkblue;
+}
+
+.footer-logo {
+    float: left;
+    
+    width: 220px;
+    
+    background-color: darkseagreen;
+}
+
+nav.footer-main-navigation {
+    float: right;
+    
+    width: 550px;
+    
+    background-color: #cccccc;
+}
+
+
+.footer-sub-navigation ul, .footer-main-navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-sub-navigation li, .footer-main-navigation li {
+    display: inline-block;
+    
+    margin-right: 30px;
+}
+
+.footer-contacts {
+    float: left;
+    
+    width: 380px;
+    
+    background-color: #cccccc;
+}
+
+.footer-sub-navigation {
+    float: right;
+    
+    width: 540px;
+    
+    background-color: darkseagreen;
+}
+/*нижняя часть футера*/
+
+.footer-bottom {
+    background-color: blue;
+    color: white;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-copyright {
+    float: left;
+    
+    width: 320px;
+    margin-right: 130px;
+    
+}
+
+.footer-social {
+    float: left;
+    
+    width: 180px;
+    margin-right: 30px;
+}
+
+.footer-feedback {
+    float: left;
+    
+    width: 140px;
+    
+    
+}
+
+.footer-developed {
+    float: right;
+    
+    width: 140px;
 }
