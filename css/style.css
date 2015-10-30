@@ -43,8 +43,10 @@ h2 {
 /*верхняя панелька*/
 
 .control-of-purchases {
+    height: 42px;
+    margin-bottom: 20px;
 
-    background-color: deepskyblue;
+    background-color: #293449;
 }
 
 .main-header-logo{
@@ -52,8 +54,27 @@ h2 {
     
     width: 220px;
     
-    background-color: coral;
+/*    background-color: coral;*/
     
+}
+
+.main-header-logo a {
+    display: block;
+    
+    padding: 9px 50px;
+    
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    
+    background-color: #ee3643;
+    border-bottom: 5px solid #b52933;
 }
 
 .control-of-purchases form {
