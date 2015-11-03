@@ -712,16 +712,21 @@ span.image-window {
 /*популярные товары*/
 .popular-goods {
     margin-bottom: 20px;
+    
 }
 
 .popular-goods-header, .popular-makers-header {
     margin-bottom: 20px;
+    padding: 26px 30px;
     
     background-color: #f7f3ec;
 }
 
 .popular-goods-header h2, .popular-makers-header h2 {
     float: left;
+    
+    margin: 0;
+    margin-top: 5px;
     
     font-family: Cuprum, Arial, Helvetica, sans-serif;
     font-size: 30px;
@@ -732,6 +737,35 @@ span.image-window {
 
 .popular-goods-header a, .popular-makers-header a {
     float: right;
+    
+    
+}
+
+a.content-btn {
+    display: block;
+    
+    width: 232px;
+    padding: 10px 10px;
+    
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    
+    background-color: #ee3643;
+    border-radius: 2px;
+}
+
+a.content-btn:hover {
+    background-color: #ca2c37;
+}
+
+a.content-btn:active {
+    background-color: #ba2732;
 }
 
 /*каталог популярных товаров*/
