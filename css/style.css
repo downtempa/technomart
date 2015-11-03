@@ -125,6 +125,7 @@ h2 {
 }
 
 header.main-header {
+    margin-bottom: 60px;
     padding-bottom: 60px;
     
     background-color: #f1f5f7;
@@ -557,16 +558,111 @@ nav.main-navigation a:active {
 /* промоблок*/
 
 .promo {
-    width: 300px;
+    position: relative;
+    
+    width: 275px;
     margin-bottom: 20px;
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 30px;
     
     background-color: darkorchid;
 }
 
 .promo h4 {
     margin: 0;
+    margin-bottom: 8px;
+    
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    
+    
 }
 
+.promo a {
+    display: block;
+    
+    width: 125px;
+    padding: 10px 5px;
+    
+    
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #ffffff;
+    
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    
+    background-color: rgba( 0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+
+.promo a:hover {
+    background-color: rgba( 0, 0, 0, 0.2);
+}
+
+.promo a:active {
+    background-color: rgba( 0, 0, 0, 0.3);
+}
+
+span.image-window {
+    position: absolute;
+    display: block;
+    top: 20px;
+    right: 26px;
+    
+    width: 82px;
+    height: 80px;
+    
+    
+    background-color: red;
+}
+
+.promo.materials {
+    background-color: #f6b22d;
+}
+
+.promo.materials span {
+    background: url("../img/sprite-promo.png") no-repeat 52% 3%;
+}
+
+.promo.tool {
+    background-color: #4aafde;
+}
+
+.promo.tool span {
+    background: url("../img/sprite-promo.png") no-repeat 96% 3%;
+}
+
+.promo.technics {
+    background-color: #cc79d1;
+}
+
+.promo.technics span {
+    background: url("../img/sprite-promo.png") no-repeat 7% 3%;
+}
+
+.promo.discounts {
+    background-color: #85d179;
+}
+
+.promo.discounts span {
+    background: url("../img/sprite-promo.png") no-repeat 95% 83%;
+}
+
+.promo.delivery {
+    background-color: #f6b22d;
+}
+
+.promo.delivery span {
+    background: url("../img/sprite-promo.png") no-repeat 8% 83%;
+}
 /*левая колонка*/
 
 .promo-block .left-col {
