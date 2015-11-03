@@ -93,6 +93,7 @@ body {
     line-height: 24px;
 }
 
+ 
 h1 {
     font-family: Cuprum, Arial, Helvetica, sans-serif;
     font-size: 30px;
@@ -126,7 +127,7 @@ h2 {
 /*верхняя панелька*/
 
 .control-of-purchases {
-    height: 42px;
+/*    height: 42px;*/
     margin-bottom: 20px;
 
     background-color: #293449;
@@ -136,6 +137,8 @@ h2 {
     float: left;
     
     width: 220px;
+    
+    box-shadow: 0 5px 0 #b52933;
     
 }
 
@@ -155,17 +158,16 @@ h2 {
     vertical-align: middle;
     
     background-color: #ee3643;
-    border-bottom: 5px solid #b52933;
 }
 
 .main-header-logo a:hover {
     background-color: #ca2c37;
-    border-bottom: 5px solid #9a212a;
+    box-shadow: 0 5px 0 #9a212a;
 }
 
 .main-header-logo a:active {
     background-color: #ba2732;
-    border-bottom: 5px solid #8e1e26;
+    box-shadow: 0 5px 0 #9a212a;
 }
 
 .control-of-purchases form {
@@ -173,14 +175,9 @@ h2 {
     float: left;
     
     width: 270px;
-    
-    color: #ffffff;
-      
 }
 
-.control-of-purchases form:hover {
-    background-color: #212a3a;
-}
+/*кнопку поиска позиционируем*/
 
 form[name="header-search"] button[type="submit"] {
     position: absolute;
@@ -188,15 +185,12 @@ form[name="header-search"] button[type="submit"] {
     left: 8px;
     
     margin: 0;
-/*
-    margin-left: 15px;
-    margin-right: 8px;
-    padding: 0;
-*/
-    
+
     border: none;
-    background-color: inherit;
+    background-color: #293449;
 } 
+
+/*убираем рамку к нопки*/
 
 form[name="header-search"] button[type="submit"]:active {
     outline: none;
@@ -211,17 +205,32 @@ input[type="search"] {
     
     
     width: 211px;
-    padding: 11px 10px 11.4px 49px;
+    padding: 11px 10px 11px 49px;
     
     font-family: Cuprum, Arial, Helvetica, sans-serif;
     font-size: 17px;
     font-weight: normal;
     color: #ffffff;
+    line-height: 20px;
     
-    background-color: inherit;
+    background-color: #293449;
     outline: none;
     border: none;
-    
+}
+
+/*эффекты формы*/
+
+
+ input[type="search"]:hover {
+    background-color: #212a3a;
+}
+
+input[type="search"]:hover + button {
+    background-color: #212a3a;
+}
+
+input[type="search"]:hover + button i.icon-search {
+    color: #ffffff;
 }
 
 input[type="search"]:focus {
@@ -238,6 +247,8 @@ input[type="search"]:focus + button {
     background-color: #ffffff;
 
 }
+
+/*стиль placeholder*/
 
 input[type="search"]::-webkit-input-placeholder {
     font-family: Cuprum, Arial, Helvetica, sans-serif;
@@ -260,12 +271,6 @@ input[type="search"]:-ms-input-placeholder {
     color: #ffffff;
 }
 
-/*
-input[type="search"]:focus {
-
-    background-color: #ffffff;
-}
-*/
 
 .user-controls {
     float: right;
@@ -274,6 +279,85 @@ input[type="search"]:focus {
     
     background-color: #76706e;
 }
+
+.user-controls a {
+    float: left;
+    
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.user-controls a.control-btn {
+    width: 133px;
+    padding: 9px 0  9px 17px;
+    
+    text-align: left;
+    
+    background-color: #293449;
+}
+
+.user-controls a.control-btn:hover {
+    background-color: #212a3a;
+}
+
+
+
+.user-controls a.control-btn:hover i.icon-bookmark, .user-controls a.control-btn:hover i.icon-basket {
+    color: #ffffff;
+}
+
+.user-controls a.control-btn:active {
+    color: #8b8e94;
+    
+    background-color: #161d29;
+}
+
+.user-controls a.control-btn:active i.icon-bookmark, .user-controls a.control-btn:active i.icon-basket {
+    color: #8b8e94;
+}
+
+.user-controls i.icon-bookmark, .user-controls i.icon-basket {
+    margin-right: 13px;
+    
+    color: #6a7180;
+}
+
+.user-controls a.header-btn {
+    width: 140px;
+    padding: 9px 5px;
+    
+    text-align: center;
+    
+    background-color: #63a63e;
+    
+}
+
+.user-controls a.header-btn:hover {
+    background-color: #5fbb2d;
+}
+
+.user-controls a.header-btn:active {
+    background-color: #518534;
+    color: #b1c5a8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*контент шапки*/
 
