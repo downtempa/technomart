@@ -124,11 +124,18 @@ h2 {
     padding: 0 10px;
 }
 
+header.main-header {
+    padding-bottom: 60px;
+    
+    background-color: #f1f5f7;
+    
+}
+
 /*верхняя панелька*/
 
 .control-of-purchases {
 /*    height: 42px;*/
-    margin-bottom: 20px;
+    margin-bottom: 45px;
 
     background-color: #293449;
 }
@@ -344,58 +351,180 @@ input[type="search"]:-ms-input-placeholder {
     color: #b1c5a8;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.main-header-content {
+    margin-bottom: 48px;
+}
 
 /*контент шапки*/
 
 .header-shop-info {
     float: left;
     
-    width: 300px;
+    width: 247px;
     margin-right: 20px;
+    padding-left: 53px;
     
-    background-color: #cccccc;
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+    font-weight: normal;
+    color: #ee3643;
+    
+/*    background-color: #cccccc;*/
 }
 
 .header-contact-information {
     float: left;
     
-    width: 300px;
+    width: 277px;
     
-    background-color: blue;
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #32425c;
+    text-align: center;
+    
+/*    background-color: #e5b5b5;*/
+}
+.header-contact-information p, .header-shop-info p {
+    margin: 0;
+}
+
+.header-contact-information span {
+    display: block;
+    margin: 0;
+    padding: 9px 0 8px;
+    
+    font-size: 21px;
+    line-height: 23px;
+    color: #e9292a;
+    text-align: center;
+    vertical-align: middle;
+    
+    
+    border: 3px solid #ffffff;
+}
+
+.header-contact-information i.icon-phone {
+    float: left;
+    margin-left: 10px;
+    
+    color: #b7bfc8;
+    
+    font-size: 22px;
+    line-height: 18px;
+   
 }
 
 .user-block {
     float: right;
     
-    width: 300px;
+    width: 280px;
     
-    background-color: red;
+/*    background-color: red;*/
+}
+
+.user-block a.header-btn {
+    display: block;
+    padding: 14px 5px;
+    
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    
+    background-color: #ffffff;
+}
+
+.user-block a.enter {
+    float: left;
+    
+    width: 120px;
+    
+    padding: 13px 0 12px;
+    
+    text-align: left;
+}
+
+.user-block a.registration {
+    float: right;
+    
+    width: 140px;
+}
+
+.user-block i.icon-login {
+/*    float: left;*/
+
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    font-size: 21px;
+    color: #c5c5c5
+}
+
+.user-block a.header-btn:hover {
+    color: #ee3643;
+}
+
+.user-block a.enter:hover i.icon-login {
+    color: #32425c;
+}
+
+.user-block a.header-btn:active, .user-block a.enter:active i.icon-login{
+    color: #c5c5c5;
 }
 
 /*основное меню*/
 
 nav.main-navigation {
-    background-color: aqua;
+    
+    background-color: #32425c;
+    border-bottom: 5px solid #293449;
+    
 }
-/*каким маржином лучше отталкивать левым или правым?*/
+
+nav.main-navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 nav.main-navigation li {
     float: left;
     
-    margin-right: 20px;
+}
+
+nav.main-navigation a {
+    display: block;
+    
+    padding: 20px 33px;
+    
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: normal;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav.main-navigation li:first-child a {
+    padding: 20px 37px;
+}
+
+nav.main-navigation a:hover {
+    background-color: #293449;
+}
+
+nav.main-navigation a:active {
+    color: #84888e;
+    
+    background-color: #1d2739;
 }
 
 /* промоблок*/
