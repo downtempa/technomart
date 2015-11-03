@@ -178,7 +178,7 @@ header.main-header {
 }
 
 .control-of-purchases form {
-    position: relative;
+/*    position: relative;*/
     float: left;
     
     width: 270px;
@@ -187,11 +187,16 @@ header.main-header {
 /*кнопку поиска позиционируем*/
 
 form[name="header-search"] button[type="submit"] {
+/*
     position: absolute;
     top: 7px;
     left: 8px;
+*/
+    float: left;
     
+    width: 35px;
     margin: 0;
+    padding: 9px 10px;
 
     border: none;
     background-color: #293449;
@@ -206,13 +211,14 @@ form[name="header-search"] button[type="submit"]:active {
 i.icon-search {
     font-size: 17px;
     color: #81868f;
+    line-height: 1;
 }
 
 input[type="search"] {
-    
+    float: right;
     
     width: 211px;
-    padding: 11px 10px 11px 49px;
+    padding: 11px 10px 11px 14px;
     
     font-family: Cuprum, Arial, Helvetica, sans-serif;
     font-size: 17px;
@@ -225,10 +231,30 @@ input[type="search"] {
     border: none;
 }
 
+form[name="header-search"]:hover, form[name="header-search"]:hover input[type="search"], form[name="header-search"]:hover button[type="submit"]{
+    background-color: #212a3a;
+}
+
+form[name="header-search"]:hover .icon-search {
+    color: #ffffff;
+}
+
+form[name="header-search"] input[type="search"]:focus, form[name="header-search"] input[type="search"]:focus + button[type="submit"] {
+    background-color: #ffffff;
+}
+
+input[type="search"]:focus {
+    color: #000000;
+}
+
+input[type="search"]:focus + button[type="submit"] > i.icon-search {
+    color: #ee3643;
+}
 /*эффекты формы*/
 
 
- input[type="search"]:hover {
+/*
+ input[type="search"]:hover  {
     background-color: #212a3a;
 }
 
@@ -254,6 +280,7 @@ input[type="search"]:focus + button {
     background-color: #ffffff;
 
 }
+*/
 
 /*стиль placeholder*/
 
