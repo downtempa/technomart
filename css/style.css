@@ -626,10 +626,29 @@ span.image-window {
 
 .promo.materials {
     background-color: #f6b22d;
+    margin-right: 20px;
 }
 
 .promo.materials span {
     background: url("../img/sprite-promo.png") no-repeat 52% 3%;
+}
+
+.promo-new {
+    position: relative;
+}
+
+.promo-new::after {
+    content: " ";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    
+    top: 0;
+    right: 0;
+    
+    background: url("../img/flag-new.png") no-repeat 50% 50%;
+    
+    
 }
 
 .promo.tool {
@@ -676,13 +695,9 @@ span.image-window {
     float: left;
 }
 
-.promo.materials {
-    margin-right: 20px;
-}
-
 /* промо слайдер*/
 
-.promo-slide-2 {
+.promo-slide-1 {
     display: none;
 }
 
@@ -702,11 +717,17 @@ span.image-window {
 .popular-goods-header, .popular-makers-header {
     margin-bottom: 20px;
     
-    background-color: aqua;
+    background-color: #f7f3ec;
 }
 
 .popular-goods-header h2, .popular-makers-header h2 {
     float: left;
+    
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #32425c;
 }
 
 .popular-goods-header a, .popular-makers-header a {
