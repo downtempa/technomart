@@ -687,19 +687,149 @@ span.image-window {
 .promo-block .left-col {
     
     float: left;
-    width: 621px;
+    width: 620px;
 }
 
 
 .left-col .promo {
     float: left;
+    width: 275px;
 }
 
-/* промо слайдер*/
+/* ПРОМО СЛАЙДЕР*/
+
+.promo-block-slider {
+    position: relative;
+    clear: both;
+    
+    width: 620px;
+    height: 266px;
+}
+
+input[name="promo"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.promo-slider-controls {
+    position: absolute;
+    bottom: 36px;
+    left: 50%;
+    
+    height: 10px;
+    width: 80px;
+    margin-left: -40px;
+    
+    text-align: center;
+    
+/*    background-color: aqua;*/
+    z-index: 1000;
+}
+
+.promo-slider-controls label {
+    display:inline-block;
+    
+    width: 6px;
+    height: 6px;
+    margin: 0 5px;
+    
+    background-color: #ffffff;
+    border:2px solid #ffffff;
+    vertical-align: top;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#promo-1:checked ~ .promo-slider-controls label[for="promo-1"],
+#promo-2:checked ~ .promo-slider-controls label[for="promo-2"] {
+    background-color: #ee3643;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+/*    padding-left: 25px;*/
+    
+    overflow: hidden;
+}
+
+.slide h2 {
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    
+    margin: 0;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.slide p {
+    padding: 0;
+    margin: 0;
+    margin-left: 25px;
+    
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.promo-slides .slider-btn {
+    display: block;
+    
+    width: 175px;
+    margin-left: 23px;
+    margin-top: 111px;
+}
+
+.promo-slides .slider-arrow {
+    position: absolute;
+    
+    margin: 0;
+
+    font-size: 45px;
+    line-height: 45px;
+    color: #ffffff;
+}
+
+.promo-slides .left-arrow {
+    top: 42%;
+    left: 1%;
+}
+.promo-slides .right-arrow {
+    top: 42%;
+    right: 1%;
+}
 
 .promo-slide-1 {
+    background: #8d8786 url("../img/promo-slide-1.jpg") no-repeat;
+}
+
+.promo-slide-2 {
+    background: #8d8786 url("../img/promo-slide-2.jpg") no-repeat;
+}
+
+.slide {
     display: none;
 }
+
+#promo-1:checked ~ .promo-slides .promo-slide-1 {
+    display: block;
+}
+
+#promo-2:checked ~ .promo-slides .promo-slide-2 {
+    display: block;
+}
+
 
 /*правая колонка*/
 
@@ -757,7 +887,7 @@ a.content-btn {
     text-align: center;
     
     background-color: #ee3643;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 a.content-btn:hover {
