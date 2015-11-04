@@ -799,6 +799,7 @@ input[name="promo"] {
     font-size: 45px;
     line-height: 45px;
     color: #ffffff;
+    cursor: pointer;
 }
 
 .promo-slides .left-arrow {
@@ -846,7 +847,7 @@ input[name="promo"] {
 }
 
 .popular-goods-header, .popular-makers-header {
-    margin-bottom: 20px;
+/*    margin-bottom: 20px;*/
     padding: 26px 30px;
     
     background-color: #f7f3ec;
@@ -928,7 +929,7 @@ a.content-btn:active {
     background-color: aquamarine;
 }
 
-/*популярные производители*/
+/*ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ*/
 
 .popular-makers {
     margin-bottom: 20px;
@@ -943,9 +944,21 @@ a.content-btn:active {
     vertical-align: top;
     
     margin-right: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
     
-    
+    border: 1px solid #e7e7e7;
+}
+
+.popular-makers-catalog a:hover {
+    box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5)
+}
+
+.popular-makers-catalog a:active {
+    box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
+}
+
+.popular-makers-catalog a:active img {
+    opacity: 0.3;
 }
 
 .popular-makers-catalog li:nth-child(4n) {
@@ -955,13 +968,21 @@ a.content-btn:active {
 .popular-makers-catalog a {
     display: block;
     
-    width: 220px;
+    width: 218px;
     min-height: 145px;
     
-    background-color: #cccccc;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 145px;
 } 
 
-/*сервисы*/
+.popular-makers-catalog img {
+    vertical-align: middle;
+}
+
+
+
+/*СЕРВИСЫ*/
 
 .services {
     margin-bottom: 20px;
