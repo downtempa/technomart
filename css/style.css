@@ -637,16 +637,18 @@ span.image-window {
     position: relative;
 }
 
-.promo-new::after {
+.flag-new::after {
     content: " ";
     position: absolute;
     width: 60px;
     height: 60px;
     
-    top: 0;
-    right: 0;
+    top: 0px;
+    right: 0px;
     
     background: url("../img/flag-new.png") no-repeat 50% 50%;
+    
+    z-index: 100;
     
     
 }
@@ -913,7 +915,9 @@ a.content-btn:active {
 .popular-goods-catalog li {
     display: inline-block;
     vertical-align: top;
+    
     margin-right: 20px;
+    margin-top: 20px;
     
     font-size: 18px;
 }
@@ -923,10 +927,166 @@ a.content-btn:active {
 }
 
 .catalog-item {
-    width: 220px;
+    position: relative;
+    width: 218px;
     min-height: 318px;
     
-    background-color: aquamarine;
+    text-align: center;
+    
+    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
+}
+
+.catalog-item .catalog-item-action {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 218px;
+    height: 88px;
+    padding: 40px 0;
+    
+    background-color: #ffffff; 
+}
+
+.catalog-item-action .buy-accept,
+.catalog-item-action .add-to-boookmarks {
+  
+    display: block;
+    width: 135px;
+    margin: 0 auto 7px;
+    padding: 10px 0;
+    
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    
+    border-radius: 3px;
+    background-color: #63a63e;
+}
+
+.catalog-item-action .buy-accept {
+    box-shadow: inset 0 -3px 0 #367315;
+}
+
+.catalog-item-action .add-to-boookmarks {
+    width: 129px;
+    padding: 7px 0;
+    
+    color: #32425c;
+    
+    border: 3px solid #63a63e;
+    background-color: #ffffff;
+}
+
+.catalog-item .catalog-item-action {
+    display: none;
+}
+
+.catalog-item:hover .catalog-item-action {
+    display: block;
+}
+
+.catalog-item:hover {
+    box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
+    border: none;
+    width: 220px;
+}
+
+.catalog-item-action .buy-accept:hover {
+    background-color: #5fbb2d;
+}
+
+.catalog-item-action .buy-accept:active {
+    background-color: #518534;
+    box-shadow: none;
+}
+
+.catalog-item-action .add-to-boookmarks:hover {
+    border: 3px solid #32425c;
+}
+
+.catalog-item-action .add-to-boookmarks:active {
+    border: 3px solid #32425c;
+    opacity: 0.3;
+}
+
+.item-image {
+    width: 100%;
+    height: 175px;
+    
+    line-height: 175px;
+    text-align: center;
+    
+    background-color: #ffffff;
+}
+
+.item-image img {
+    vertical-align: middle;
+    
+/*    background-color: #ffffff;*/
+}
+
+.catalog-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18px;
+    
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    
+    padding: 0 25px;
+}
+
+.old-price {
+    
+    min-height: 30px;
+    margin-bottom: 3px;
+    
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #999999;
+    text-decoration: line-through;
+    vertical-align: middle;
+}
+
+.price {
+    position: relative;
+    width: 137px;
+    padding: 10px 0;
+    
+    margin: 0 auto;
+    
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    
+    background-color: #ee3643;
+}
+
+.price::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: -22px;
+    
+    width: 0;
+    height: 0;
+/*    background-color: #ffffff;*/
+    border: 19px solid #ffffff;
+    border-left-color: #ee3643;
+    
+    z-index: 20;
+}
+
+.catalog-item.flag-new::after {
+    top: -1px;
+    right: -1px;
 }
 
 /*ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ*/
@@ -946,15 +1106,19 @@ a.content-btn:active {
     margin-right: 20px;
     margin-top: 20px;
     
-    border: 1px solid #e7e7e7;
+    
 }
 
 .popular-makers-catalog a:hover {
-    box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5)
+    box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
+    border: none;
+    width: 220px;
 }
 
 .popular-makers-catalog a:active {
     box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
+    border: none;
+    width: 220px;
 }
 
 .popular-makers-catalog a:active img {
@@ -974,6 +1138,8 @@ a.content-btn:active {
     background-color: #ffffff;
     text-align: center;
     line-height: 145px;
+    
+    border: 1px solid #e7e7e7;
 } 
 
 .popular-makers-catalog img {
@@ -987,8 +1153,32 @@ a.content-btn:active {
 .services {
     margin-bottom: 20px;
     
-    background-color: aquamarine;
+    background-color: #f2f6f8;
 }
+
+.services-description {
+    padding: 65px 0 70px;
+}
+
+.services-description h2 {
+    
+    margin: 0;
+    margin-bottom: 34px;
+    padding: 0;
+    
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.services-description p {
+    margin: 0;
+    padding: 0;
+}
+
+
 
 /*сладер сервис*/
 
