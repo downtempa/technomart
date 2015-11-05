@@ -747,7 +747,7 @@ input[name="promo"] {
     background-color: #ee3643;
 }
 
-.slide {
+.prm-slide {
     position: absolute;
     top: 0;
     left: 0;
@@ -759,7 +759,7 @@ input[name="promo"] {
     overflow: hidden;
 }
 
-.slide h2 {
+.prm-slide h2 {
     font-family: Cuprum, Arial, Helvetica, sans-serif;
     font-size: 36px;
     line-height: 36px;
@@ -774,7 +774,7 @@ input[name="promo"] {
     padding: 0;
 }
 
-.slide p {
+.prm-slide p {
     padding: 0;
     margin: 0;
     margin-left: 25px;
@@ -1188,22 +1188,17 @@ a.content-btn:active {
     min-height: 300px;
 }
 
-/*
-.services-slide-2, .services-slide-3 {
-    display: block;
-}
-*/
-
 .slider-left-col {
     float: left;
     
     width: 300px;
     
-    background-color: #79d875;
+/*    background-color: #79d875;*/
 }
 
 input[name="services"] {
-    display: none;
+    position: absolute;
+    opacity: 0;
 }
 
 .services-slider-controls {
@@ -1218,7 +1213,7 @@ input[name="services"] {
 }
 
 .services-slider-controls li {
-    padding: 15px 0 15px 10px;
+    padding: 15px 0 15px 23px;
     margin: 0;
     
     font-family: Cuprum, Arial, Helvetica, sans-serif;
@@ -1245,9 +1240,9 @@ input[name="services"] {
     background: url("../img/services-slider-right-border.png") no-repeat;
 }
 
-#service-1:checked ~ .services-slider-controls label[for="service-1"] li,
-#service-2:checked ~ .services-slider-controls label[for="service-2"] li,
-#service-3:checked ~ .services-slider-controls label[for="service-3"] li {
+#service-1:checked ~ .slider-left-col .services-slider-controls label[for="service-1"] li,
+#service-2:checked ~ .slider-left-col .services-slider-controls label[for="service-2"] li,
+#service-3:checked ~ .slider-left-col .services-slider-controls label[for="service-3"] li {
     background-color: #ffffff;
     color: #32425c;
     border-bottom: 1px solid #ffffff;
@@ -1255,12 +1250,76 @@ input[name="services"] {
 }
 
 .services-slides {
+    position: relative;
     float: right;
     
     width: 620px;
+    height: 300px;
     
-    background-color: cadetblue;
+/*    background-color: cadetblue;*/
 }
+
+.srvs-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+.srvs-slide h3 {
+    margin: 0;
+    padding: 0;
+    
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #32425c;
+    margin-bottom: 25px;
+}
+
+
+
+.srvs-slide a.content-btn {
+    width: 175px;
+    margin-top: 26px;
+} 
+
+
+
+.services-slide-1 {
+    background: url("../img/bg-services-slide-1.png") no-repeat 100% 60%;
+}
+
+.services-slide-2 {
+    background: url("../img/bg-services-slide-2.png") no-repeat 100% 0%;
+}
+
+.services-slide-3 {
+    background: url("../img/bg-services-slide-3.png") no-repeat 94% 0%;
+}
+
+.srvs-slide {
+    display: none;
+}
+
+#service-1:checked ~ .services-slides .services-slide-1 {
+    display: block;
+}
+
+#service-2:checked ~ .services-slides .services-slide-2 {
+    display: block;
+}
+
+#service-3:checked ~ .services-slides .services-slide-3 {
+    display: block;
+}
+
 
 /* информация о компании*/
 
