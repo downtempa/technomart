@@ -108,7 +108,7 @@ h2 {
     font-size: 30px;
     font-weight: normal;
     color: #000000;
-    line-height: 24px;
+    line-height: 30px;
     text-transform: uppercase;
 }
 
@@ -219,6 +219,7 @@ input[type="search"] {
     float: right;
     
     width: 211px;
+    height: 20px;
     padding: 11px 10px 11px 14px;
     
     font-family: Cuprum, Arial, Helvetica, sans-serif;
@@ -1151,7 +1152,7 @@ a.content-btn:active {
 /*СЕРВИСЫ*/
 
 .services {
-    margin-bottom: 20px;
+    margin-bottom: 54px;
     
     background-color: #f2f6f8;
 }
@@ -1165,12 +1166,6 @@ a.content-btn:active {
     margin: 0;
     margin-bottom: 26px;
     padding: 0;
-    
-    font-family: Cuprum, Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: #000000;
 }
 
 .services-description p {
@@ -1321,14 +1316,17 @@ input[name="services"] {
 }
 
 
-/* информация о компании*/
+/* И Н Ф О Р М А Ц И Я  О  К О М П А Н И И*/
+.company-info {
+    padding-bottom: 86px;
+}
 
 .company-info .benefits {
     float: left;
     
     width: 540px;
     
-    background-color: green;
+/*    background-color: green;*/
 }
 
 .company-info .contacts {
@@ -1336,14 +1334,73 @@ input[name="services"] {
     
     width: 300px;
     
-    background-color: green;
+/*    background-color: green;*/
 }
 
 .company-info-action {
     display: none;
 }
 
-/*футер*/
+.benefits p:not(:last-of-type) {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.benefits p:last-of-type {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.benefits ul {
+    list-style: none;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.benefits li {
+    position: relative;
+    padding: 10px 0 10px 38px;
+    
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: normal;
+}
+
+.benefits li::before {
+    content: " ";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    
+    width: 25px;
+    
+    border: 1px solid #fb565a;
+}
+
+.contacts p {
+    margin-bottom: 31px;
+}
+
+.contacts a.content-btn {
+    width: auto;
+    margin-top: 36px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Ф У Т Е Р*/
 
 footer.main-footer {
 
