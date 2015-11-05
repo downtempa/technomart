@@ -1157,13 +1157,13 @@ a.content-btn:active {
 }
 
 .services-description {
-    padding: 65px 0 70px;
+    padding: 65px 0 69px;
 }
 
 .services-description h2 {
     
     margin: 0;
-    margin-bottom: 34px;
+    margin-bottom: 26px;
     padding: 0;
     
     font-family: Cuprum, Arial, Helvetica, sans-serif;
@@ -1180,11 +1180,19 @@ a.content-btn:active {
 
 
 
-/*сладер сервис*/
+/*С Л А Й Д Е Р  С Е Р В И С*/
 
-.services-slide-2, .services-slide-3 {
-    display: none;
+.services-slider {
+    position: relative;
+    
+    min-height: 300px;
 }
+
+/*
+.services-slide-2, .services-slide-3 {
+    display: block;
+}
+*/
 
 .slider-left-col {
     float: left;
@@ -1192,6 +1200,58 @@ a.content-btn:active {
     width: 300px;
     
     background-color: #79d875;
+}
+
+input[name="services"] {
+    display: none;
+}
+
+.services-slider-controls {
+    position: relative;
+    width: 240px;
+}
+
+.services-slider-controls ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.services-slider-controls li {
+    padding: 15px 0 15px 10px;
+    margin: 0;
+    
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #ffffff;
+
+    background-color: #32425c;
+    cursor: pointer;
+    border-bottom: 1px solid #293449;
+    border-top: 1px solid #405069;
+}
+
+.services-slider-controls::after {
+    content: " ";
+    position: absolute;
+    top: -23%;
+    right: 0;
+    
+    width: 10px;
+    height: 272px;
+    
+    background: url("../img/services-slider-right-border.png") no-repeat;
+}
+
+#service-1:checked ~ .services-slider-controls label[for="service-1"] li,
+#service-2:checked ~ .services-slider-controls label[for="service-2"] li,
+#service-3:checked ~ .services-slider-controls label[for="service-3"] li {
+    background-color: #ffffff;
+    color: #32425c;
+    border-bottom: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
 }
 
 .services-slides {
