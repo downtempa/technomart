@@ -1783,6 +1783,7 @@ a.logged-user-name:active .icon-user {
 
 .catalog-title {
     padding: 10px 30px;
+    margin-bottom: 20px;
     
     background-color: #f2f6f8;
 }
@@ -1796,8 +1797,212 @@ a.logged-user-name:active .icon-user {
     
     width: 220px;
     
-    background-color: #cccccc;
+/*    background-color: #cccccc;*/
 }
+
+.filter-title {
+    padding: 7px 19px;
+    margin-bottom: 11px;
+    
+    background-color: #f7f3ec;
+}
+
+.filter-title span, .catalog-sorting-title span {
+    text-transform: uppercase;
+    
+}
+
+.catalog-filter-form fieldset {
+    margin: 0;
+    margin-bottom: 16px;
+    padding: 0;
+    padding-bottom: 24px;
+    
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.filter-switches fieldset:last-of-type {
+    border: none;
+}
+
+.catalog-filter-form legend {
+    margin-bottom: 14px;
+    
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: bold;
+    
+    text-transform: uppercase;
+}
+
+.range-filter {
+    width: 220px;
+}
+
+.range-controls {
+    position: relative;
+    
+    height: 41px;
+    padding-top: 39px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    
+    border-radius: 3px;
+    background: #f7f3ec;
+}
+
+.range-controls .scale {
+    height: 2px;
+    
+    background: #d7dcde;
+}
+
+.range-controls .bar {
+    width: 70%;
+    height: 2px;
+    
+    background: #00ca74;
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    
+    width: 4px;
+    height: 4px;
+    
+    cursor: pointer;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    background: #ababab;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+    left: 20px;
+}
+
+.range-controls .toggle-max {
+    left: 160px;
+}
+
+.price-controls {
+    font-size: 0;
+}
+
+.price-controls span {
+    font-size: 16px;
+    line-height: 38px;
+}
+
+.price-controls label {
+    display: inline-block;
+    vertical-align: top;
+    
+    width: 47%;
+    
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.max-price {
+    text-align: right;
+}
+
+.price-controls input {
+    font-size: 17px;
+    line-height: 18px;
+    width: 75px;
+/*    margin-left: 10px;*/
+    padding: 8px 10px;
+    text-align: center;
+    color: #000000;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    background: #f7f3ec;
+}
+
+.catalog-filter-form input[type="checkbox"],
+.catalog-filter-form input[type="radio"]{
+    display: none;
+}
+
+.filter-switches label {
+    position: relative;
+    display: block;
+
+    
+    width: 150px;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.filter-switches label:last-of-type {
+    margin-bottom: 0;
+}
+
+input[type="checkbox"] + label:before {
+    content:"\2610";
+    font-family: "symbols-technomart";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 28px;
+    color: #c1c1c1;
+}
+
+input[type="checkbox"]:checked + label:before {
+    content:"\2611";
+    font-family: "symbols-technomart";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 28px;
+    color: #c1c1c1;
+}
+
+input[type="radio"] + label:before {
+    content:"\25cb";
+    font-family: "symbols-technomart";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 28px;
+    color: #c1c1c1;
+}
+
+input[type="radio"]:checked + label:before {
+    content:"\25cf";
+    font-family: "symbols-technomart";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 28px;
+    color: #c1c1c1;
+}
+
+.filter-switches label:hover::before {
+    color: #b5b5b5;
+}
+
+input[type="checkbox"]:disabled + label:before,
+input[type="radio"]:disabled + label:before {
+    opacity: 0.3;
+}
+
+input[type="checkbox"]:disabled + label,
+input[type="radio"]:disabled + label {
+    opacity: 0.4;
+}
+
 
 
 

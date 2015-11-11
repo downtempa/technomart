@@ -115,33 +115,47 @@
                     <div class="catalog-filter-form">
                         <form action="/echo" method="post">
                             <div class="filter-title">
-                                <span>Фильтр</span>
+                                <span>Фильтр:</span>
                             </div>
                             <fieldset>
                                 <legend>Цена:</legend>
-                                <div class="price-filter">
-                                    <div class="range-input">
-                                        
+                                <div class="range-filter">
+                                    <div class="range-controls">
+                                        <div class="scale">
+                                            <div class="bar" style="margin-left: 0%; width: 85%"></div>
+                                        </div>
+                                        <div class="toggle toggle-min"></div>
+                                        <div class="toggle toggle-max"></div>
                                     </div>
-                                    <div class="range-output">
-                                        <input type="text" name="min-price" value="0"> -
-                                        <input type="text" name="max-price" value="30000">
+                                    <div class="price-controls">
+                                      <label class="min-price"><input name="min-price" type="text" value="0"></label>
+                                      <span>—</span>
+                                      <label class="max-price"><input name="max-price" type="text" value="30000"></label>
                                     </div>
                                 </div>
                             </fieldset>
-                            <fieldset>
-                                <legend>Производители</legend>
-                                <input type="checkbox" id="bosch" value="bosch" checked>
-                                <label for="bosch">Bosch</label>
-                                <input type="checkbox" id="interscol" value="interscol">
-                                <label for="interscol">Интерскол</label>
-                                <input type="checkbox" id="makita" value="makita" checked>
-                                <label for="makita">Makita</label>
-                                <input type="checkbox" id="dewatl" value="dewatl">
-                                <label for="dewatl">Dewatl</label>
-                                <input type="checkbox" id="hitachi" value="hitachi">
-                                <label for="hitachi">Hitachi</label>
-                            </fieldset>
+                            <div class="filter-switches">
+                                <fieldset>
+                                    <legend>Производители:</legend>
+                                    <input type="checkbox" id="bosch" value="bosch" checked>
+                                    <label for="bosch">Bosch</label>
+                                    <input type="checkbox" id="interscol" value="interscol" disabled>
+                                    <label for="interscol">Интерскол</label>
+                                    <input type="checkbox" id="makita" value="makita" checked>
+                                    <label for="makita">Makita</label>
+                                    <input type="checkbox" id="dewatl" value="dewatl">
+                                    <label for="dewatl">Dewatl</label>
+                                    <input type="checkbox" id="hitachi" value="hitachi">
+                                    <label for="hitachi">Hitachi</label>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Питание:</legend>
+                                    <input type="radio" name="power" id="battery" value="battery">
+                                    <label for="battery">Аккумуляторные</label>
+                                    <input type="radio" name="power" id="nerwork" value="nerwork">
+                                    <label for="nerwork">Сетевые</label>
+                                </fieldset>
+                            </div>
                             <button type="submit" class="content-btn">Показать</button>
                         </form>
                     </div>
