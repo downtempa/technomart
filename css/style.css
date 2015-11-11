@@ -564,6 +564,10 @@ nav.main-navigation a:active {
 
 /* промоблок*/
 
+.promo-block {
+    margin-bottom: 34px;
+}
+
 .promo {
     position: relative;
     
@@ -1039,10 +1043,10 @@ a.content-btn:active {
 .catalog-item h3 {
     font-size: 18px;
     font-weight: bold;
-    line-height: 18px;
+    line-height: 19px;
     
     margin: 0;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 6px;
     
     padding: 0 25px;
@@ -1186,7 +1190,7 @@ a.content-btn:active {
 .services-slider {
     position: relative;
     
-    min-height: 300px;
+    min-height: 290px;
 }
 
 .slider-left-col {
@@ -1255,7 +1259,7 @@ input[name="services"] {
     float: right;
     
     width: 620px;
-    height: 300px;
+    height: 290px;
     
 /*    background-color: cadetblue;*/
 }
@@ -1746,6 +1750,7 @@ a.logged-user-name:active .icon-user {
 
 .breadcrumbs ul {
     margin: 0;
+    margin-left: -3px;
     padding: 0;
 }
 
@@ -1989,18 +1994,36 @@ input[type="radio"]:checked + label:before {
     color: #c1c1c1;
 }
 
-.filter-switches label:hover::before {
+.filter-switches label:hover:before,
+input[type="radio"]:checked + label:hover:before,
+input[type="checkbox"]:checked + label:hover:before{
     color: #b5b5b5;
 }
 
 input[type="checkbox"]:disabled + label:before,
-input[type="radio"]:disabled + label:before {
+input[type="radio"]:disabled + label:before,{
     opacity: 0.3;
 }
 
 input[type="checkbox"]:disabled + label,
 input[type="radio"]:disabled + label {
     opacity: 0.4;
+}
+
+button[type="submit"] {
+    padding: 8px 38px;
+    margin-top: 37px;
+    
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    text-transform: uppercase;
+    
+    background: none;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+    outline: none;
 }
 
 
@@ -2016,6 +2039,12 @@ input[type="radio"]:disabled + label {
 /*    background-color: #d85c5c;*/
 }
 
+.catalog-sorting {
+    background-color: #f7f3ec;
+    padding: 5px 5px 5px 20px;
+}
+
+
 .catalog-items ul, .catalog-sorting-types ul {
     margin: 0;
     padding: 0;
@@ -2027,14 +2056,82 @@ input[type="radio"]:disabled + label {
 }
 
 .catalog-sorting-types {
+    float: left;
+    margin-left: 140px;
+}
+
+.catalog-sorting-arrows {
     float: right;
+    
+}
+
+.catalog-sorting-types a {
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px dotted #ee3643;
+    color: #000000;
+}
+
+.catalog-sorting-types a span {
+    opacity: 0.3;
+}
+
+.catalog-sorting-types a:hover {
+    border-bottom: 1px solid #ee3643;
+}
+
+.catalog-sorting-types a:hover span {
+    opacity: 1;
+}
+
+.active-type a,
+.catalog-sorting-types a:active {
+    border: none;
+}
+
+.active-type a span,
+.catalog-sorting-types a:active span {
+    opacity: 1;
+    color: #ee3643;
 }
 
 .catalog-sorting-types li {
     display: inline-block;
     vertical-align: top;
     
-    margin-right: 15px;
+    margin-right: 65px;
+}
+
+.catalog-sorting-types li:last-child {
+    margin-right: 0;
+}
+
+.catalog-sorting-arrows .icon-up-dir,
+.catalog-sorting-arrows .icon-down-dir {
+    font-size: 23px;
+    line-height: 23px;
+    color: #c6c2bd;
+}
+
+.catalog-sorting-arrows .icon-down-dir {
+    margin-left: -4px;
+}
+
+.catalog-sorting-arrows a:hover .icon-up-dir,
+.catalog-sorting-arrows a:hover .icon-down-dir {
+    color: #000000;
+}
+
+.catalog-sorting-arrows a:active .icon-up-dir,
+.catalog-sorting-arrows a:active .icon-down-dir {
+    color: #ee3643;
+}
+
+.active-arrow .icon-up-dir,
+.active-arrow .icon-down-dir {
+    color: #ee3643;
 }
 
 .catalog-items {
