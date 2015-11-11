@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
+    <body class="catalog-page">
 <!--  хэдэр  -->
         <header class="main-header">
 <!--  верхняя панелька  -->
@@ -23,7 +23,7 @@
                     </form>
                     <div class="user-controls clearfix">
                         <a href="#" class="control-btn bookmarks"><i class="icon-bookmark"></i>Закладки: <span>0</span></a>
-                        <a href="#" class="control-btn cart"><i class="icon-basket"></i>Корзина: <span>10</span></a>
+                        <a href="#" class="control-btn cart action"><i class="icon-basket"></i>Корзина: <span>10</span></a>
                         <a href="#" class="header-btn checkout">Оформить заказ</a>
                     </div>
                 </div>
@@ -41,14 +41,21 @@
                         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                     </div>
 <!--  user-block  -->
-                    <div class="user-block">
-                        <a href="#" class="logged-user-field">
-                            <span class="user-icons"></span>
-                            Равшан Джамшутович
-                            <span class="user-icons"></span>
-                        </a>
-                        <a href="#">Мои заказы</a>
-                        <a href="#">Личный кабинет</a>
+                    <div class="user-block-logged">
+                        <div class="user-logged-field">
+                            <a href="#" class="logged-user-out"><i class="icon-logout"></i></a>
+                            <a href="#" class="logged-user-name"><i class="icon-user"></i></i>Равшан Джамшутович</a>
+                        </div>
+                        <div class="user-logged-menu">
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#">Мои заказы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Личный кабинет</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 <!--  основное меню  -->
@@ -86,16 +93,16 @@
                 <nav class="breadcrumbs clearfix">
                     <ul>
                         <li>
-                            <a href="index.html"></a>
+                            <a href="index.html"><i class="icon-home"></i></a>
                         </li>
                         <li>
-                            <a href="#">Каталог</a>
+                            <a href="#"><i class="icon-right"></i>Каталог</a>
                         </li>
                         <li>
-                            <a href="">Инструмент</a>
+                            <a href=""><i class="icon-right"></i>Инструмент</a>
                         </li>
                         <li>
-                            <span>Перфораторы</span>
+                            <span><i class="icon-right"></i>Перфораторы</span>
                         </li>
                     </ul>
                 </nav>

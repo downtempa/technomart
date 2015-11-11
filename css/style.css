@@ -313,7 +313,7 @@ input[type="search"]:-ms-input-placeholder {
     
     width: 450px;
     
-    background-color: #76706e;
+    background-color: inherit;
 }
 
 .user-controls a {
@@ -339,10 +339,14 @@ input[type="search"]:-ms-input-placeholder {
     background-color: #212a3a;
 }
 
+.user-controls a.action {
+    background-color: #ee3643;
+}
+
 
 
 .user-controls a.control-btn:hover i.icon-bookmark, .user-controls a.control-btn:hover i.icon-basket {
-    color: #ffffff;
+    opacity: 1;
 }
 
 .user-controls a.control-btn:active {
@@ -352,13 +356,14 @@ input[type="search"]:-ms-input-placeholder {
 }
 
 .user-controls a.control-btn:active i.icon-bookmark, .user-controls a.control-btn:active i.icon-basket {
-    color: #8b8e94;
+    opacity: 0.5;
 }
 
 .user-controls i.icon-bookmark, .user-controls i.icon-basket {
     margin-right: 13px;
     
-    color: #6a7180;
+    color: #ffffff;
+    opacity: 0.3;
 }
 
 .user-controls a.header-btn {
@@ -381,7 +386,7 @@ input[type="search"]:-ms-input-placeholder {
 }
 
 .main-header-content {
-    margin-bottom: 48px;
+    margin-bottom: 38px;
 }
 
 /*контент шапки*/
@@ -419,6 +424,7 @@ input[type="search"]:-ms-input-placeholder {
 }
 .header-contact-information p, .header-shop-info p {
     margin: 0;
+    margin-top: 4px;
 }
 
 .header-contact-information span {
@@ -1634,26 +1640,154 @@ nav.footer-main-navigation {
     width: 111px;
 }
 
-/* КАТАЛОГ*/
+/* КАТАЛОГ ----------------------------------------------------------------------*/
 /*контент шапки*/
 /*логин*/
+.catalog-page .main-header {
+    margin-bottom: 0;
+}
 
 .user-block-logged {
     float: right;
     
     width: 300px;
-    
-    background-color: red;
 }
+
+.user-logged-field {
+    padding: 13px 3px 8px 15px;
+
+    background-color: #ffffff;
+}
+
+.user-logged-field a.logged-user-name {
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+    text-decoration: none;
+    
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.user-logged-field a.logged-user-out {
+    float: right;
+}
+
+.logged-user-name .icon-user {
+    float: left;
+    margin-right: 10px;
+    
+    font-size: 18px;
+    line-height: 18px;
+    color: #c5c5c5;
+}
+
+.logged-user-out .icon-logout {
+    
+    font-size: 22px;
+    line-height: 22px;
+    color: #c5c5c5;
+}
+
+.user-logged-menu ul {
+    padding: 0;
+    padding-left: 17px;
+    padding-top: 5px;
+    margin: 0;
+}
+
+.user-logged-menu li {
+    float: left;
+    margin-right: 27px;
+    padding: 0 2px;
+}
+
+.user-logged-menu li:first-child {
+    list-style: none;
+    
+}
+
+.user-logged-menu a {
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #32425c;
+}
+
+a.logged-user-out:hover .icon-logout, a.logged-user-name:hover .icon-user {
+    color: #32425c;
+}
+
+a.logged-user-name:active  {
+    opacity: 0.3;
+}
+
+a.logged-user-name:active .icon-user {
+    color: #c5c5c5;
+}
+
+.user-logged-menu a:hover {
+    color: #ee3643;
+}
+
+.user-logged-menu a:active {
+    color: #32425c;
+    opacity: 0.3;
+}
+
+
 
 /*основной контент*/
 
-nav.breadcrumbs li {
+.breadcrumbs {
+    padding: 18px 0;
+}
+
+.breadcrumbs ul {
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumbs li {
     display: inline-block;
     vertical-align: top;
     
-    margin-right: 20px;
+    margin-right: 7px;
 }
+
+.breadcrumbs li:first-child {
+    margin-right: 0;
+}
+
+.breadcrumbs a, .breadcrumbs span {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}
+
+.breadcrumbs .icon-home {
+    font-size: 16px;
+    color: #c1c6ce;
+    line-height: 20px;
+}
+
+.breadcrumbs .icon-right {
+    font-size: 14px;
+    color: #c1c6ce;
+    line-height: 20px;
+    margin-right: 10px;
+} 
+
+
+
+.catalog-title {
+    padding: 10px 30px;
+    
+    background-color: #f2f6f8;
+}
+
+
 
 /*фильтр*/
 
@@ -1667,7 +1801,7 @@ nav.breadcrumbs li {
 
 
 
-/*каталог товаров*/
+/*каталог товаров --------------------------------------------------------------------*/
 
 .catalog-products {
     float: right;
