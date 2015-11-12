@@ -445,10 +445,12 @@
 			var cart = document.querySelector(".add-to-cart-popup");
 			var closeCart = document.querySelector(".closing-cart");
 			
-			btnBuy.addEventListener("click", function(event) {
-				event.preventDefault();
-				cart.classList.add("add-to-cart-show");
-			})
+			for (var i = 0; i < btnBuy.length; i++) {
+            btnBuy[i].addEventListener("click", function(event) {
+                event.preventDefault();
+                cart.classList.add("add-to-cart-show");
+            });
+        	}
 			
 			closeCart.addEventListener("click", function(event) {
 				event.preventDefault();

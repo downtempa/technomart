@@ -332,8 +332,9 @@
                     </div>
                     <div class="company-info-action">
                         <div class="modal-map">
-                            <button class="closing-cross">&times;</button>
-                            <img src="img/map-hover-image.jpg" width="940" height="446" alt="Место на увеличенной карте" title="Наш офис здесь">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.7516361114067!2d30.31810003127109!3d59.938747285514545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1447366633626" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <button class="closing-cross closing-map">&times;</button>
+<!--                            <img src="img/map-hover-image.jpg" width="940" height="446" alt="Место на увеличенной карте" title="Наш офис здесь">-->
                         </div>
                     </div>
                 </div>
@@ -456,6 +457,12 @@
 			var btnBuy = document.querySelectorAll(".buy-accept");
 			var cart = document.querySelector(".add-to-cart-popup");
 			var closeCart = document.querySelector(".closing-cart");
+			
+			var	mapShow = document.querySelector(".open-modal-map");
+			var map = document.querySelector(".modal-map");
+			var closeMap = document.querySelector(".closing-map");
+			
+		
 
 			btnShow.addEventListener("click", function(event) {
 				event.preventDefault();
@@ -467,16 +474,28 @@
 				writeForm.classList.remove("write-us-popup-show");
 			})
 			
+			
 			for (var i = 0; i < btnBuy.length; i++) {
             btnBuy[i].addEventListener("click", function(event) {
                 event.preventDefault();
-                cart.classList.add("modal-cart-show");
+                cart.classList.add("add-to-cart-show");
             });
-        }
+        	}
 			
 			closeCart.addEventListener("click", function(event) {
 				event.preventDefault();
 				cart.classList.remove("add-to-cart-show");
+			})
+			
+			
+			mapShow.addEventListener("click", function(event) {
+				event.preventDefault();
+				map.classList.add("modal-map-show");
+			})
+			
+			closeMap.addEventListener("click", function(event) {
+				event.preventDefault();
+				map.classList.remove("modal-map-show");
 			})
         </script>
 		

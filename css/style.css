@@ -1350,9 +1350,14 @@ input[name="services"] {
     width: 940px;
     height: 446px;
     
+	background-color: #ffffff;
     box-shadow: 0px 0px 20px 1px rgba(35, 31, 32, 0.5);
     
     z-index: 20;
+}
+
+.modal-map-show {
+	display: block;
 }
 
 .modal-map .closing-cross {
