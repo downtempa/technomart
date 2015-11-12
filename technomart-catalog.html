@@ -430,7 +430,7 @@
             </div>
         </footer>
         <div class="add-to-cart-popup">
-            <button class="closing-cross">&times;</button>
+            <button class="closing-cross closing-cart">&times;</button>
             <div class="success-add">
                 <span>Товар добавлен в корзину!</span>
                 <div class="popup-control">
@@ -439,4 +439,20 @@
                 </div>
             </div>
         </div>
+        
+        <script>
+			var btnBuy = document.querySelectorAll(".buy-accept");
+			var cart = document.querySelector(".add-to-cart-popup");
+			var closeCart = document.querySelector(".closing-cart");
+			
+			btnBuy.addEventListener("click", function(event) {
+				event.preventDefault();
+				cart.classList.add("add-to-cart-show");
+			})
+			
+			closeCart.addEventListener("click", function(event) {
+				event.preventDefault();
+				cart.classList.remove("add-to-cart-show");
+			})
+		</script>
     </body>

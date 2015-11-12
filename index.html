@@ -325,12 +325,14 @@
                         <h2>Контакты</h2>
                         <p>Вы можете забрать товар сами,<br>
                         заехав в наш офис:</p>
-                        <img src="img/small-map-image.jpg" width="300" height="158" alt="Место на карте" title="Наш офис здесь">
-                        <a href="#" class="content-btn">Заблудились? Напишите нам!</a>
+                        <a class="open-modal-map" href="#">
+                            <img src="img/small-map-image.jpg" width="300" height="158" alt="Место на карте" title="Наш офис здесь">
+                        </a>
+                        <a href="#" class="content-btn write-us-btn">Заблудились? Напишите нам!</a>
                     </div>
                     <div class="company-info-action">
-                        <div class="map-hover-image">
-    <!--                     здесь должен быть крестик=)  -->
+                        <div class="modal-map">
+                            <button class="closing-cross">&times;</button>
                             <img src="img/map-hover-image.jpg" width="940" height="446" alt="Место на увеличенной карте" title="Наш офис здесь">
                         </div>
                     </div>
@@ -414,7 +416,7 @@
             </div>
 <!--   попап    -->
             <div class="write-us-popup">
-                <button class="closing-cross">&times;</button>
+                <button class="closing-cross closing-write-us">&times;</button>
                 <form action="/echo" method="post">
                     <div class="popup-container clearfix">
                         <div class="popup-left-col"> 
@@ -435,5 +437,48 @@
                 </form>
             </div>
         </footer>
+        <div class="add-to-cart-popup">
+            <button class="closing-cross closing-cart">&times;</button>
+            <div class="success-add">
+                <span>Товар добавлен в корзину!</span>
+                <div class="popup-control">
+                    <a href="#" class="content-btn">Оформить заказ</a>
+                    <button class="content-btn">Продолжить покупки</button>
+                </div>
+            </div>
+        </div>
+					
+        <script>
+        	var	btnShow = document.querySelector(".write-us-btn");
+			var writeForm = document.querySelector(".write-us-popup");
+			var closeForm = document.querySelector(".closing-write-us");
+
+			var btnBuy = document.querySelectorAll(".buy-accept");
+			var cart = document.querySelector(".add-to-cart-popup");
+			var closeCart = document.querySelector(".closing-cart");
+
+			btnShow.addEventListener("click", function(event) {
+				event.preventDefault();
+				writeForm.classList.add("write-us-popup-show");
+			})
+			
+			closeForm.addEventListener("click", function(event) {
+				event.preventDefault();
+				writeForm.classList.remove("write-us-popup-show");
+			})
+			
+			for (var i = 0; i < btnBuy.length; i++) {
+            btnBuy[i].addEventListener("click", function(event) {
+                event.preventDefault();
+                cart.classList.add("modal-cart-show");
+            });
+        }
+			
+			closeCart.addEventListener("click", function(event) {
+				event.preventDefault();
+				cart.classList.remove("add-to-cart-show");
+			})
+        </script>
+		
     </body>
 </html>

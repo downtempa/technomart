@@ -112,6 +112,11 @@ h2 {
     text-transform: uppercase;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .clearfix::after {
     content: '';
     display: table;
@@ -610,7 +615,7 @@ input[type="search"]:-ms-input-placeholder {
     
     background: url("../img/flag-new.png") no-repeat 50% 50%;
     
-    z-index: 100;
+    z-index: 5;
 }
 
 .tool {
@@ -683,7 +688,7 @@ input[name="promo"] {
     
     text-align: center;
     
-    z-index: 1000;
+    z-index: 5;
 }
 
 .promo-slider-controls label {
@@ -1262,6 +1267,8 @@ input[name="services"] {
 
 /* И Н Ф О Р М А Ц И Я  О  К О М П А Н И И*/
 .company-info {
+    position: relative;
+    
     padding-bottom: 86px;
 }
 
@@ -1277,9 +1284,11 @@ input[name="services"] {
     width: 300px;
 }
 
+/*
 .company-info-action {
     display: none;
 }
+*/
 
 .benefits p:not(:last-of-type) {
     margin: 0;
@@ -1331,6 +1340,30 @@ input[name="services"] {
     width: auto;
     margin-top: 36px;
 }
+
+.modal-map {
+	display: none;
+    position: absolute;
+    top: -22px;
+    left: 50%;
+    margin-left: -470px;
+    width: 940px;
+    height: 446px;
+    
+    box-shadow: 0px 0px 20px 1px rgba(35, 31, 32, 0.5);
+    
+    z-index: 20;
+}
+
+.modal-map .closing-cross {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    
+    z-index: 20;
+}
+
+
 
 /*Ф У Т Е Р*/
 
@@ -2126,17 +2159,30 @@ input[type="radio"]:disabled + label {
 
 
 .add-to-cart-popup {
-    display: block;
+    display: none;
+    
+    position: fixed;
+    top: 50%;
+    left: 0;
+    right: 0;
     
     width: 620px;
+    height: 271px;
     padding-top: 6px;
     margin: 100px auto;
+    margin-top: -135px;
     
     border-top: 7px solid #ee3643;
     text-align: center;
     
-    background: url("../img/add-to-cart-popup-check-img.png") no-repeat 80px 47px;
+    background: #ffffff url("../img/add-to-cart-popup-check-img.png") no-repeat 80px 47px;
     box-shadow: 0px 20px 40px 0px rgba(41, 52, 73, 0.75);
+    
+    z-index: 21;
+}
+
+.add-to-cart-show {
+	display: block;
 }
 
 .success-add span {
@@ -2195,6 +2241,14 @@ input[type="radio"]:disabled + label {
     outline: none;
 }
 
+.popup-control .content-btn:hover {
+    background-color: #ee3643;
+}
+
+.popup-control .content-btn:active {
+    background-color: #ee3643;
+}
+
 .popup-control button.content-btn {
     width: 220px;
     margin-left: 20px;
@@ -2204,14 +2258,32 @@ input[type="radio"]:disabled + label {
 }
 
 .write-us-popup {
+    display: none;
+    
+    position: fixed;
+    top: 50%;
+    right: 0;
+    left: 0;
+    bottom: 0;
     width: 620px;
+    height: 415px;
     padding-top: 6px;
     margin: 100px auto;
+    margin-top: -207px;
     
     border-top: 7px solid #ee3643;
     text-align: center;
     
+    background-color: #ffffff;
     box-shadow: 0px 20px 40px 0px rgba(41, 52, 73, 0.75);
+    
+    z-index: 30;
+    
+    overflow: auto;
+}
+
+.write-us-popup-show {
+	display: block;
 }
 
 .form-control {
