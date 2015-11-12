@@ -333,19 +333,6 @@
     <!--                     здесь должен быть крестик=)  -->
                             <img src="img/map-hover-image.jpg" width="940" height="446" alt="Место на увеличенной карте" title="Наш офис здесь">
                         </div>
-    <!--  pop-up  -->
-                        <div class="write-us-popup">
-                            <button class="closing-cross">&times;</button>
-                            <form action="/echo" method="post">
-                                <input type="text" name="user-name" placeholder="Представьтесь, пожалуйста">
-                                <input type="email" name="user-email" placeholder="Для отправки ответа"><br>
-                                <textarea name="message-text" id="message-text" cols="40" rows="10" placeholder="В свободной форме"></textarea>
-                                <div class="form-controls">
-                                    <button type="submit" class="content-btn">Отправить</button>
-                                    <button type="reset" class="content-btn">Отмена</button>
-                                </div>
-                            </form>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -424,6 +411,28 @@
                         <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
                     </div>
                 </div>
+            </div>
+<!--   попап    -->
+            <div class="write-us-popup">
+                <button class="closing-cross">&times;</button>
+                <form action="/echo" method="post">
+                    <div class="popup-container clearfix">
+                        <div class="popup-left-col"> 
+                            <label for="popup-user-name">Ваше имя:</label></br>
+                            <input type="text" id="popup-user-name" name="user-name" placeholder="Представьтесь, пожалуйста">
+                        </div>
+                        <div class="popup-right-col">
+                            <label for="popup-user-email">Ваш e-mail:</label></br>
+                            <input type="email" id="popup-user-email" name="user-email" placeholder="Для отправки ответа">
+                        </div>
+                        <label for="message-text">Текст письма:</label>
+                        <textarea name="message-text" id="message-text" placeholder="В свободной форме"></textarea>
+                    </div> 
+                    <div class="form-control">
+                        <button type="submit" class="content-btn">Отправить</button>
+                        <button type="reset" class="content-btn">Отмена</button>
+                    </div>
+                </form>
             </div>
         </footer>
     </body>
