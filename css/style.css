@@ -124,7 +124,7 @@ h2 {
     padding: 0 10px;
 }
 
-header.main-header {
+.main-header {
     margin-bottom: 60px;
     padding-bottom: 60px;
     
@@ -253,36 +253,6 @@ input[type="search"]:focus + button[type="submit"] > i.icon-search {
     color: #ee3643;
 }
 /*эффекты формы*/
-
-
-/*
- input[type="search"]:hover  {
-    background-color: #212a3a;
-}
-
-input[type="search"]:hover + button {
-    background-color: #212a3a;
-}
-
-input[type="search"]:hover + button i.icon-search {
-    color: #ffffff;
-}
-
-input[type="search"]:focus {
-    background-color: #ffffff;
-    color: #000000;
-}
-
-input[type="search"]:focus + button i.icon-search {
-    color: #ee3643;
-}
-
-input[type="search"]:focus + button {
-
-    background-color: #ffffff;
-
-}
-*/
 
 /*стиль placeholder*/
 
@@ -776,8 +746,7 @@ input[name="promo"] {
     line-height: 36px;
     font-weight: bold;
     color: #ffffff;
-    text-transform: uppercase;
-    
+ 
     margin: 0;
     margin-left: 25px;
     margin-top: 25px;
@@ -808,11 +777,15 @@ input[name="promo"] {
     position: absolute;
     
     margin: 0;
-
+    
     font-size: 45px;
     line-height: 45px;
     color: #ffffff;
+    
     cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
 }
 
 .promo-slides .left-arrow {
@@ -872,10 +845,6 @@ input[name="promo"] {
     margin: 0;
     margin-top: 5px;
     
-    font-family: Cuprum, Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    line-height: 30px;
-    font-weight: normal;
     color: #32425c;
 }
 
@@ -1264,7 +1233,7 @@ input[name="services"] {
 /*    background-color: cadetblue;*/
 }
 
-.srvs-slide {
+.service-slide {
     position: absolute;
     top: 0;
     left: 0;
@@ -1275,7 +1244,7 @@ input[name="services"] {
     
 }
 
-.srvs-slide h3 {
+.service-slide h3 {
     margin: 0;
     padding: 0;
     
@@ -1290,7 +1259,7 @@ input[name="services"] {
 
 
 
-.srvs-slide a.content-btn {
+.service-slide a.content-btn {
     width: 175px;
     margin-top: 26px;
 } 
@@ -1309,7 +1278,7 @@ input[name="services"] {
     background: url("../img/bg-services-slide-3.png") no-repeat 94% 0%;
 }
 
-.srvs-slide {
+.service-slide {
     display: none;
 }
 

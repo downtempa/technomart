@@ -17,7 +17,7 @@
                     <div class="main-header-logo">
                         <a href="#" title="Техномарт">Техномарт</a>
                     </div>
-                    <form action="/echo" method="post" name="header-search" clearfix>
+                    <form action="/echo" method="post" name="header-search">
                         
                         <input type="search" name="search-field" id="search-field" placeholder="Поиск:">
                         <button type="submit"><i class="icon-search"></i></button>
@@ -109,8 +109,8 @@
                                     <p>Настоящие мужские игрушки</p>
                                     <a href="#" class="content-btn slider-btn">Открыть каталог</a>
                                 </div>
-                                <bitton class="slider-arrow left-arrow"><i class="icon-left"></i></bitton>
-                                <bitton class="slider-arrow right-arrow"><i class="icon-right"></i></bitton>
+                                <button class="slider-arrow left-arrow"><i class="icon-left"></i></button>
+                                <button class="slider-arrow right-arrow"><i class="icon-right"></i></button>
                             </div>
                         </div>
                     </div>
@@ -281,14 +281,14 @@
                             </div>
                         </div>
                         <div class="services-slides">
-                            <div class="srvs-slide services-slide-1">
+                            <div class="service-slide services-slide-1">
                                 <h3>Доставка</h3>
                                 <p>Мы с удовольствием доставим ваш товар прямо<br>
                                 к вашему подъезду совершенно бесплатно!<br>
                                 Ведь мы неплохо заработаем,<br>
                                 поднимая его на ваш на этаж!</p>
                             </div>
-                            <div class="srvs-slide services-slide-2">
+                            <div class="service-slide services-slide-2">
                                 <h3>Гарантия</h3>
                                 <p>Если купленный у нас товар поломается или заискрит,<br>
                                 а также в случае пожара, спровоцированного его возгаранием,<br>
@@ -296,7 +296,7 @@
                                 сгоревший товар на новый.<br>
                                 Дом уж восстановите как-нибудь сами.</p>
                             </div>
-                            <div class="srvs-slide services-slide-3">
+                            <div class="service-slide services-slide-3">
                                 <h3>Кредит</h3>
                                 <p>Залезть в долговую яму стало проще!<br>
                                 Кредитные консультанты придут вам на помощь.</p>
@@ -418,11 +418,11 @@
                 <form action="/echo" method="post">
                     <div class="popup-container clearfix">
                         <div class="popup-left-col"> 
-                            <label for="popup-user-name">Ваше имя:</label></br>
+                            <label for="popup-user-name">Ваше имя:</label><br>
                             <input type="text" id="popup-user-name" name="user-name" placeholder="Представьтесь, пожалуйста">
                         </div>
                         <div class="popup-right-col">
-                            <label for="popup-user-email">Ваш e-mail:</label></br>
+                            <label for="popup-user-email">Ваш e-mail:</label><br>
                             <input type="email" id="popup-user-email" name="user-email" placeholder="Для отправки ответа">
                         </div>
                         <label for="message-text">Текст письма:</label>
