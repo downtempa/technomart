@@ -150,7 +150,7 @@
                                 </fieldset>
                                 <fieldset>
                                     <legend>Питание:</legend>
-                                    <input type="radio" name="power" id="battery" value="battery">
+                                    <input type="radio" name="power" id="battery" value="battery" checked>
                                     <label for="battery">Аккумуляторные</label>
                                     <input type="radio" name="power" id="nerwork" value="nerwork">
                                     <label for="nerwork">Сетевые</label>
@@ -435,7 +435,7 @@
                 <span>Товар добавлен в корзину!</span>
                 <div class="popup-control">
                     <a href="#" class="content-btn">Оформить заказ</a>
-                    <button class="content-btn">Продолжить покупки</button>
+                    <button class="content-btn closing-cart">Продолжить покупки</button>
                 </div>
             </div>
         </div>
@@ -443,7 +443,7 @@
         <script>
 			var btnBuy = document.querySelectorAll(".buy-accept");
 			var cart = document.querySelector(".add-to-cart-popup");
-			var closeCart = document.querySelector(".closing-cart");
+			var closeCart = document.querySelectorAll(".closing-cart");
 			
 			for (var i = 0; i < btnBuy.length; i++) {
             btnBuy[i].addEventListener("click", function(event) {
@@ -452,9 +452,11 @@
             });
         	}
 			
-			closeCart.addEventListener("click", function(event) {
-				event.preventDefault();
-				cart.classList.remove("add-to-cart-show");
-			})
+			for (var i = 0; i < closeCart.length; i++) {
+            closeCart[i].addEventListener("click", function(event) {
+                event.preventDefault();
+                cart.classList.remove("add-to-cart-show");
+            });
+        	}
 		</script>
     </body>

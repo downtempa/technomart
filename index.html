@@ -444,7 +444,7 @@
                 <span>Товар добавлен в корзину!</span>
                 <div class="popup-control">
                     <a href="#" class="content-btn">Оформить заказ</a>
-                    <button class="content-btn">Продолжить покупки</button>
+                    <button class="content-btn closing-cart">Продолжить покупки</button>
                 </div>
             </div>
         </div>
@@ -456,7 +456,7 @@
 
 			var btnBuy = document.querySelectorAll(".buy-accept");
 			var cart = document.querySelector(".add-to-cart-popup");
-			var closeCart = document.querySelector(".closing-cart");
+			var closeCart = document.querySelectorAll(".closing-cart");
 			
 			var	mapShow = document.querySelector(".open-modal-map");
 			var map = document.querySelector(".modal-map");
@@ -475,6 +475,8 @@
 			})
 			
 			
+			
+			
 			for (var i = 0; i < btnBuy.length; i++) {
             btnBuy[i].addEventListener("click", function(event) {
                 event.preventDefault();
@@ -482,11 +484,14 @@
             });
         	}
 			
-			closeCart.addEventListener("click", function(event) {
-				event.preventDefault();
-				cart.classList.remove("add-to-cart-show");
-			})
+			for (var i = 0; i < closeCart.length; i++) {
+            closeCart[i].addEventListener("click", function(event) {
+                event.preventDefault();
+                cart.classList.remove("add-to-cart-show");
+            });
+        	}
 			
+//		
 			
 			mapShow.addEventListener("click", function(event) {
 				event.preventDefault();
