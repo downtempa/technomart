@@ -1160,7 +1160,8 @@ a.content-btn:active {
 	z-index: 20;
 }
 
-popular-goods-catalog .flag-new:after {
+.popular-goods-catalog .flag-new:after,
+.catalog-items .flag-new:after {
 	top: -1px;
 	right: -1px;
 }
