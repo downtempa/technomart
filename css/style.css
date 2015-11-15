@@ -243,7 +243,7 @@ body {
 }
 
 h1 {
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 30px;
 	font-weight: normal;
 	color: #32425c;
@@ -252,7 +252,7 @@ h1 {
 }
 
 h2 {
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 30px;
 	font-weight: normal;
 	color: #000000;
@@ -278,8 +278,8 @@ img {
 }
 
 .main-header {
-	margin-bottom: 60px;
-	padding-bottom: 60px;
+	margin-bottom: 59px;
+	padding-bottom: 59px;
 	background-color: #f1f5f7;
 }
 
@@ -299,8 +299,8 @@ img {
 
 .main-header-logo a {
 	display: block;
-	padding: 9px 10px;
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	padding: 10px 10px 8px 10px;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 24px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -332,6 +332,7 @@ img {
 form[name="header-search"] button[type="submit"] {
 	float: left;
 	width: 35px;
+	min-height: 42px;
 	margin: 0;
 	padding: 9px 15px;
 	border: none;
@@ -352,10 +353,10 @@ form[name="header-search"] button[type="submit"]:active {
 
 input[type="search"] {
 	float: right;
-	width: 211px;
+	width: 213px;
 	height: 20px;
-	padding: 11px 10px 11px 14px;
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	padding: 11px 10px 11px 12px;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 17px;
 	font-weight: normal;
 	color: #ffffff;
@@ -376,7 +377,7 @@ form[name="header-search"]:hover .icon-search {
 }
 
 form[name="header-search"] input[type="search"]:focus,
-form[name="header-search"] input[type="search"]:focus + button[type="submit"] {
+input[type="search"]:focus + button[type="submit"] {
 	background-color: #ffffff;
 }
 
@@ -384,7 +385,7 @@ input[type="search"]:focus {
 	color: #000000;
 }
 
-input[type="search"]:focus + button[type="submit"] > i.icon-search {
+input[type="search"]:focus + button[type="submit"] {
 	color: #ee3643;
 }
 
@@ -395,21 +396,21 @@ input[type="search"]:focus + button[type="submit"] > i.icon-search {
 /*стиль placeholder*/
 
 input[type="search"]::-webkit-input-placeholder {
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 17px;
 	font-weight: normal;
 	color: #ffffff;
 }
 
 input[type="search"]:-moz-placeholder {
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 17px;
 	font-weight: normal;
 	color: #ffffff;
 }
 
 input[type="search"]:-ms-input-placeholder {
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 17px;
 	font-weight: normal;
 	color: #ffffff;
@@ -423,7 +424,7 @@ input[type="search"]:-ms-input-placeholder {
 
 .user-controls a {
 	float: left;
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 17px;
 	font-weight: normal;
 	color: #ffffff;
@@ -439,6 +440,16 @@ input[type="search"]:-ms-input-placeholder {
 	overflow: hidden;
 }
 
+.user-controls .bookmarks {
+	padding-left: 10px;
+	width: 140px;
+}
+
+.user-controls .cart {
+	padding-left: 15px;
+	width: 135px;
+}
+
 .user-controls .control-btn:hover {
 	background-color: #212a3a;
 }
@@ -447,8 +458,8 @@ input[type="search"]:-ms-input-placeholder {
 	background-color: #ee3643;
 }
 
-.user-controls .control-btn:hover .icon-bookmark,
-.user-controls .control-btn:hover .icon-basket {
+.control-btn:hover .icon-bookmark,
+.control-btn:hover .icon-basket {
 	opacity: 1;
 }
 
@@ -457,8 +468,8 @@ input[type="search"]:-ms-input-placeholder {
 	background-color: #161d29;
 }
 
-.user-controls .control-btn:active .icon-bookmark,
-.user-controls .control-btn:active .icon-basket {
+.control-btn:active .icon-bookmark,
+.control-btn:active .icon-basket {
 	opacity: 0.5;
 }
 
@@ -470,8 +481,8 @@ input[type="search"]:-ms-input-placeholder {
 }
 
 .user-controls .header-btn {
-	width: 140px;
-	padding: 9px 5px;
+	width: 141px;
+    padding: 9px 5px 9px 4px;
 	text-align: center;
 	background-color: #63a63e;
 	white-space: nowrap;
@@ -491,6 +502,10 @@ input[type="search"]:-ms-input-placeholder {
 	margin-bottom: 38px;
 }
 
+.catalog-page .main-header-content {
+	margin-bottom: 37px;
+}
+
 
 /*контент шапки*/
 
@@ -498,8 +513,8 @@ input[type="search"]:-ms-input-placeholder {
 	float: left;
 	width: 247px;
 	margin-right: 20px;
-	padding-left: 53px;
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	padding-left: 52px;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 16px;
 	line-height: 23px;
 	font-style: italic;
@@ -510,7 +525,7 @@ input[type="search"]:-ms-input-placeholder {
 .header-contact-information {
 	float: left;
 	width: 270px;
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: normal;
@@ -524,10 +539,9 @@ input[type="search"]:-ms-input-placeholder {
 	margin-top: 4px;
 }
 
-.header-contact-information span {
-	display: block;
+.header-contact-information .contact-tel {
 	margin: 0;
-	padding: 9px 0 8px;
+	padding: 9px 17px 8px 0;
 	font-size: 21px;
 	line-height: 23px;
 	color: #e9292a;
@@ -536,9 +550,14 @@ input[type="search"]:-ms-input-placeholder {
 	border: 3px solid #ffffff;
 }
 
+.catalog-page .contact-tel {
+	padding: 9px 7px 8px 0;
+	letter-spacing: 0.4px;
+}
+
 .header-contact-information .icon-phone {
 	float: left;
-	margin-left: 10px;
+	margin-left: 7px;
 	color: #b7bfc8;
 	font-size: 22px;
 	line-height: 18px;
@@ -552,7 +571,7 @@ input[type="search"]:-ms-input-placeholder {
 .user-block .header-btn {
 	display: block;
 	padding: 14px 5px;
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 21px;
 	line-height: 18px;
 	font-weight: normal;
@@ -578,7 +597,7 @@ input[type="search"]:-ms-input-placeholder {
 
 .user-block .icon-login {
 	margin-left: 10px;
-	margin-right: 10px;
+	margin-right: 6px;
 	font-size: 21px;
 	color: #c5c5c5
 }
@@ -587,7 +606,7 @@ input[type="search"]:-ms-input-placeholder {
 	color: #ee3643;
 }
 
-.user-block .enter:hover .icon-login {
+.enter:hover .icon-login {
 	color: #32425c;
 }
 
@@ -617,17 +636,33 @@ input[type="search"]:-ms-input-placeholder {
 .main-navigation a {
 	display: block;
 	padding: 20px 33px;
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 17px;
-	line-height: 17px;
+	line-height: 16px;
 	font-weight: normal;
 	color: #ffffff;
 	text-decoration: none;
 	text-align: center;
 }
 
-.main-navigation li:first-child a {
-	padding: 20px 37px;
+li.main-nav-item:first-child a {
+	padding: 20px 31px 20px 51px;
+}
+
+li.main-nav-item:nth-child(3) a {
+    padding: 20px 27px 20px 26px;
+}
+
+li.main-nav-item:nth-child(5) a {
+    padding: 20px 34px 19px 25px;
+}
+
+li.main-nav-item:nth-child(6) a {
+    padding: 20px 30px 20px 28px;
+}
+
+li.main-nav-item:nth-child(7) a {
+    padding: 20px 54px 20px 32px;
 }
 
 .main-navigation a:hover {
@@ -643,7 +678,7 @@ input[type="search"]:-ms-input-placeholder {
 /* промоблок*/
 
 .promo-block {
-	margin-bottom: 34px;
+	margin-bottom: 32px;
 }
 
 .promo {
@@ -658,7 +693,7 @@ input[type="search"]:-ms-input-placeholder {
 .promo h4 {
 	margin: 0;
 	margin-bottom: 12px;
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: bold;
@@ -669,7 +704,7 @@ input[type="search"]:-ms-input-placeholder {
 	display: block;
 	width: 125px;
 	padding: 10px 5px;
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: normal;
@@ -814,11 +849,8 @@ input[name="promo"] {
 }
 
 .prm-slide {
-	position: absolute;
-	top: 0;
-	left: 0;
+	min-height: 266px;
 	width: 100%;
-	height: 100%;
 	overflow: hidden;
 }
 
@@ -828,7 +860,7 @@ input[name="promo"] {
 	margin-top: 25px;
 	margin-bottom: 1px;
 	padding: 0;
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 36px;
 	line-height: 36px;
 	font-weight: bold;
@@ -909,9 +941,13 @@ input[name="promo"] {
 	margin-bottom: 20px;
 }
 
-.popular-goods-header,
+.popular-goods-header {
+	padding: 26px 25px 26px 27px;
+	background-color: #f7f3ec;
+}
+
 .popular-makers-header {
-	padding: 26px 30px;
+	padding: 26px 26px 26px 23px;
 	background-color: #f7f3ec;
 }
 
@@ -932,7 +968,7 @@ a.content-btn {
 	display: block;
 	width: 232px;
 	padding: 10px 10px;
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: normal;
@@ -983,7 +1019,7 @@ a.content-btn:active {
 .catalog-item {
 	position: relative;
 	width: 218px;
-	min-height: 318px;
+	min-height: 317px;
 	text-align: center;
 	border: 1px solid #e5e5e5;
 	background-color: #ffffff;
@@ -1005,7 +1041,7 @@ a.content-btn:active {
 	width: 135px;
 	margin: 0 auto 7px;
 	padding: 10px 0;
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 14px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -1095,7 +1131,7 @@ a.content-btn:active {
 
 .price {
 	position: relative;
-	width: 137px;
+	width: 141px;
 	padding: 10px 0;
 	margin: 0 auto;
 	font-size: 17px;
@@ -1103,6 +1139,8 @@ a.content-btn:active {
 	font-weight: bold;
 	color: #ffffff;
 	background-color: #ee3643;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .price::after {
@@ -1110,14 +1148,14 @@ a.content-btn:active {
 	position: absolute;
 	top: 0;
 	right: -22px;
-	width: 0;
+	width: 4px;
 	height: 0;
 	border: 19px solid #ffffff;
 	border-left-color: #ee3643;
 	z-index: 20;
 }
 
-.catalog-item.flag-new::after {
+popular-goods-catalog .flag-new::after {
 	top: -1px;
 	right: -1px;
 }
@@ -1126,7 +1164,7 @@ a.content-btn:active {
 /*ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ*/
 
 .popular-makers {
-	margin-bottom: 86px;
+	margin-bottom: 79px;
 }
 
 .popular-makers-catalog {
@@ -1152,7 +1190,7 @@ a.content-btn:active {
 	width: 220px;
 }
 
-.popular-makers-catalog a:active img {
+.makers-img-wrapper:active img {
 	opacity: 0.3;
 }
 
@@ -1178,7 +1216,7 @@ a.content-btn:active {
 /*СЕРВИСЫ*/
 
 .services {
-	margin-bottom: 54px;
+	margin-bottom: 49px;
 	background-color: #f2f6f8;
 }
 
@@ -1193,6 +1231,7 @@ a.content-btn:active {
 }
 
 .services-description p {
+	width: 400px;
 	margin: 0;
 	padding: 0;
 }
@@ -1208,7 +1247,6 @@ a.content-btn:active {
 .slider-left-col {
 	float: left;
 	width: 300px;
-	/*    background-color: #79d875;*/
 }
 
 input[name="services"] {
@@ -1223,9 +1261,9 @@ input[name="services"] {
 
 .services-slider-controls label {
 	display: block;
-	padding: 15px 0 15px 23px;
+	padding: 15px 0 14px 21px;
 	margin: 0;
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 21px;
 	line-height: 30px;
 	font-weight: bold;
@@ -1246,8 +1284,8 @@ input[name="services"] {
 	background: url("../img/services-slider-right-border.png") no-repeat;
 }
 
-#service-1:checked ~ .slider-left-col label[for="service-1"] ,
-#service-2:checked ~ .slider-left-col label[for="service-2"] ,
+#service-1:checked ~ .slider-left-col label[for="service-1"],
+#service-2:checked ~ .slider-left-col label[for="service-2"],
 #service-3:checked ~ .slider-left-col label[for="service-3"] {
 	background-color: #ffffff;
 	color: #32425c;
@@ -1263,10 +1301,6 @@ input[name="services"] {
 }
 
 .service-slide {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
 	min-height: 290px;
 	overflow: hidden;
 }
@@ -1275,7 +1309,7 @@ input[name="services"] {
 	margin: 0;
 	padding: 0;
 	margin-bottom: 25px;
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 36px;
 	line-height: 36px;
 	font-weight: normal;
@@ -1289,7 +1323,7 @@ input[name="services"] {
 }
 
 .services-slide-1 {
-	background: url("../img/bg-services-slide-1.png") no-repeat 100% 60%;
+	background: url("../img/bg-services-slide-1.png") no-repeat 100% 82%;
 }
 
 .services-slide-2 {
@@ -1298,6 +1332,10 @@ input[name="services"] {
 
 .services-slide-3 {
 	background: url("../img/bg-services-slide-3.png") no-repeat 94% 0%;
+}
+
+.services-slide-3 p {
+	width: 280px;
 }
 
 .service-slide {
@@ -1347,21 +1385,22 @@ input[name="services"] {
 }
 
 .benefits p:last-of-type {
+	width: 400px;
 	margin: 0;
-	margin-bottom: 10px;
+	margin-bottom: 11px;
 }
 
 .benefits ul {
 	list-style: none;
 	margin: 0;
-	margin-bottom: 30px;
+	margin-bottom: 26px;
 	padding: 0;
 }
 
 .benefits li {
 	position: relative;
-	padding: 10px 0 10px 38px;
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	padding: 10px 0 10px 35px;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 18px;
 	line-height: 20px;
 	font-weight: normal;
@@ -1381,12 +1420,13 @@ input[name="services"] {
 }
 
 .contacts p {
+	width: 200px;
 	margin-bottom: 31px;
 }
 
 .contacts .content-btn {
 	width: auto;
-	margin-top: 36px;
+	margin-top: 33px;
 }
 
 .modal-map {
@@ -1397,8 +1437,8 @@ input[name="services"] {
 	margin-left: -470px;
 	width: 940px;
 	height: 446px;
-	background-color: #ffffff;
-	box-shadow: 0px 0px 20px 1px rgba(35, 31, 32, 0.5);
+	background: #ffffff url("../img/map-hover-image.jpg");
+	box-shadow: 0px 0px 15px 2px rgba(35, 31, 32, 0.5);
 	z-index: 20;
 }
 
@@ -1435,8 +1475,8 @@ input[name="services"] {
 
 .footer-logo a {
 	display: block;
-	padding: 20px 10px;
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	padding: 20px 10px 18px 6px;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 30px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -1487,7 +1527,7 @@ input[name="services"] {
 
 .footer-main-navigation a,
 .footer-sub-navigation a {
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 18px;
 	line-height: 18px;
 	text-decoration: none;
@@ -1518,10 +1558,15 @@ input[name="services"] {
 .footer-contacts {
 	float: left;
 	width: 380px;
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	padding-left: 3px;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	color: #f1f5f7;
+}
+
+.footer-contacts p {
+	width: 330px;
 }
 
 .footer-sub-navigation {
@@ -1534,8 +1579,8 @@ input[name="services"] {
 /*нижняя часть футера*/
 
 .footer-bottom {
-	padding: 37px 0 29px;
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	padding: 38px 0 29px 2px;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
@@ -1565,7 +1610,7 @@ input[name="services"] {
 
 .footer-feedback a,
 .footer-developed a {
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffd180;
@@ -1588,9 +1633,9 @@ input[name="services"] {
 
 .footer-copyright {
 	float: left;
-	width: 320px;
-	margin-right: 68px;
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	width: 250px;
+	margin-right: 138px;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
@@ -1625,9 +1670,11 @@ input[name="services"] {
 	margin-bottom: 0;
 }
 
+/*
 .catalog-page .main-header-content {
-	margin-bottom: 35px;
+	margin-bottom: 38px;
 }
+*/
 
 .user-block-logged {
 	float: right;
@@ -1635,12 +1682,12 @@ input[name="services"] {
 }
 
 .user-logged-field {
-	padding: 13px 3px 6px 15px;
+	padding: 13px 3px 6px 12px;
 	background-color: #ffffff;
 }
 
 .user-logged-field .logged-user-name {
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
@@ -1685,7 +1732,7 @@ input[name="services"] {
 }
 
 .user-logged-menu a {
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 16px;
 	line-height: 18px;
 	color: #32425c;
@@ -1701,6 +1748,10 @@ input[name="services"] {
 }
 
 .logged-user-name:active .icon-user {
+	color: #c5c5c5;
+}
+
+.logged-user-out:active .icon-logout {
 	color: #c5c5c5;
 }
 
@@ -1729,7 +1780,7 @@ input[name="services"] {
 .breadcrumbs li {
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 7px;
+	margin-right: 8px;
 }
 
 .breadcrumbs li:first-child {
@@ -1761,7 +1812,7 @@ input[name="services"] {
 }
 
 .catalog-title {
-	padding: 10px 30px;
+	padding: 10px 27px;
 	margin-bottom: 20px;
 	background-color: #f2f6f8;
 }
@@ -1775,8 +1826,8 @@ input[name="services"] {
 }
 
 .filter-title {
-	padding: 7px 19px;
-	margin-bottom: 11px;
+	padding: 6px 19px 8px;
+	margin-bottom: 8px;
 	background-color: #f7f3ec;
 }
 
@@ -1896,7 +1947,7 @@ input[name="services"] {
 	position: relative;
 	display: block;
 	width: 150px;
-	padding-left: 35px;
+	padding-left: 34px;
 	margin-bottom: 20px;
 	font-size: 15px;
 	line-height: 20px;
@@ -1965,7 +2016,8 @@ input[type="radio"]:disabled + label {
 }
 
 .catalog-filter-form button[type="submit"] {
-	padding: 8px 38px;
+	padding: 8px 5px;
+	width: 140px;
 	margin-top: 37px;
 	font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
 	font-size: 13px;
@@ -1976,6 +2028,7 @@ input[type="radio"]:disabled + label {
 	border: 1px solid #e5e5e5;
 	border-radius: 3px;
 	outline: none;
+	text-align: center;
 	white-space: nowrap;
 	overflow: hidden;
 }
@@ -2030,7 +2083,7 @@ input[type="radio"]:disabled + label {
 	color: #000000;
 }
 
-.catalog-sorting-types a span {
+.catalog-sorting-types span {
 	opacity: 0.3;
 }
 
@@ -2038,7 +2091,7 @@ input[type="radio"]:disabled + label {
 	border-bottom: 1px solid #ee3643;
 }
 
-.catalog-sorting-types a:hover span {
+.sort-type:hover span {
 	opacity: 1;
 }
 
@@ -2048,7 +2101,7 @@ input[type="radio"]:disabled + label {
 }
 
 .active-type a span,
-.catalog-sorting-types a:active span {
+.sort-type:active span {
 	color: #ee3643;
 	opacity: 1;
 }
@@ -2074,13 +2127,13 @@ input[type="radio"]:disabled + label {
 	margin-left: -4px;
 }
 
-.catalog-sorting-arrows a:hover .icon-up-dir,
-.catalog-sorting-arrows a:hover .icon-down-dir {
+a:hover .icon-up-dir,
+a:hover .icon-down-dir {
 	color: #000000;
 }
 
-.catalog-sorting-arrows a:active .icon-up-dir,
-.catalog-sorting-arrows a:active .icon-down-dir {
+a:active .icon-up-dir,
+a:active .icon-down-dir {
 	color: #ee3643;
 }
 
@@ -2102,7 +2155,7 @@ input[type="radio"]:disabled + label {
 	display: inline-block;
 	vertical-align: top;
 	margin-right: 20px;
-	margin-top: 20px;
+	margin-top: 18px;
 }
 
 .catalog-items li:nth-child(3n) {
@@ -2156,7 +2209,7 @@ input[type="radio"]:disabled + label {
 	background-color: #ee3643;
 }
 
-.catalog-pagination .next-page a {
+.catalog-pagination .next-page {
 	padding: 9px 31px;
 }
 
@@ -2193,13 +2246,13 @@ input[type="radio"]:disabled + label {
 .add-to-cart-show {
 	display: block;
 	-webkit-animation: bounce 0.6s;
-  	animation: bounce 0.6s;
+	animation: bounce 0.6s;
 }
 
 .success-add span {
 	clear: both;
 	margin-left: 55px;
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 30px;
 	line-height: 30px;
 	color: #000000;
@@ -2209,6 +2262,7 @@ input[type="radio"]:disabled + label {
 	float: right;
 	color: #ee3643;
 	font-size: 65px;
+	line-height: 25px;
 	padding: 0;
 	margin: 0;
 	border: none;
@@ -2231,7 +2285,7 @@ input[type="radio"]:disabled + label {
 	vertical-align: top;
 	width: 200px;
 	padding: 10px 10px;
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: normal;
@@ -2280,6 +2334,8 @@ input[type="radio"]:disabled + label {
 	box-shadow: 0px 20px 40px 0px rgba(41, 52, 73, 0.75);
 	z-index: 30;
 	overflow: auto;
+	-webkit-animation: bounce 0.6s;
+	animation: bounce 0.6s;
 }
 
 @-webkit-keyframes bounce {
@@ -2353,15 +2409,12 @@ input[type="radio"]:disabled + label {
 }
 
 .modal-error {
-  -webkit-animation: shake 0.6s;
-  animation: shake 0.6s;
+	-webkit-animation: shake 0.6s;
+	animation: shake 0.6s;
 }
-
 
 .write-us-popup-show {
 	display: block;
-	-webkit-animation: bounce 0.6s;
-  	animation: bounce 0.6s;
 }
 
 .form-control {
@@ -2376,7 +2429,7 @@ input[type="radio"]:disabled + label {
 	width: 220px;
 	padding: 10px 10px;
 	margin: 0;
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: normal;
@@ -2391,11 +2444,11 @@ input[type="radio"]:disabled + label {
 }
 
 .form-control .content-btn:hover {
-    background-color: #ca2c37;
+	background-color: #ca2c37;
 }
 
 .form-control .content-btn:active {
-    background-color: #ba2732;
+	background-color: #ba2732;
 }
 
 .form-control button[type="reset"] {
@@ -2416,7 +2469,7 @@ input[type="radio"]:disabled + label {
 }
 
 .write-us-popup label {
-	font-family: Cuprum, Arial, Helvetica, sans-serif;
+	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 	font-size: 18px;
 	line-height: 18px;
 	color: #000000;
@@ -2430,6 +2483,7 @@ input[type="radio"]:disabled + label {
 	border: 2px solid #d7dcde;
 	border-radius: 3px;
 	outline: none;
+	color: #999999;
 }
 
 .popup-left-col {
@@ -2445,7 +2499,7 @@ input[type="radio"]:disabled + label {
 	width: 220px;
 }
 
-#message-text {
+.popup-container textarea {
 	margin: 0;
 	margin-top: 5px;
 	padding: 5px 10px 5px 14px;
@@ -2454,4 +2508,32 @@ input[type="radio"]:disabled + label {
 	border: 2px solid #d7dcde;
 	border-radius: 3px;
 	outline: none;
+	color: #999999;
+}
+
+input[name="user-name"],
+input[name="user-email"],
+textarea[name="message-text"]::-webkit-input-placeholder {
+	font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: #999999;
+}
+
+input[name="user-name"],
+input[name="user-email"],
+textarea[name="message-text"]:-moz-placeholder {
+	font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: #999999;
+}
+
+input[name="user-name"],
+input[name="user-email"],
+textarea[name="message-text"]:-ms-input-placeholder {
+	font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: #999999;
 }
