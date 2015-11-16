@@ -19,7 +19,7 @@
 
     var linkArrow = document.querySelectorAll(".promo-slides button");
     var inputNav = document.querySelectorAll('[name^="promo"]');
-
+//	кавычки в кавычках
     if (writeForm) {
         btnShow.addEventListener("click", function(event) {
             event.preventDefault();
@@ -37,7 +37,7 @@
             }
         });
 
-        form.addEventListener('submit', function(event) {
+        form.addEventListener("submit", function(event) {
             if (!userName.value || !userEmail.value || !userMessage.value) {
                 event.preventDefault();
                 writeForm.classList.add("modal-error");
@@ -103,7 +103,7 @@
         });
     };
     for (var i = 0; i < linkArrow.length; i++) {
-        linkArrow[i].addEventListener('click', function(e) {
+        linkArrow[i].addEventListener("click", function(e) {
             var currentInput = document.querySelector(".promo-block-slider input:checked");
             var currentInputIndex = [].indexOf.call(inputNav, currentInput);
             var inputCount = inputNav.length;

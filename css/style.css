@@ -614,7 +614,7 @@ input[type="search"]:-ms-input-placeholder {
 }
 
 .user-block .header-btn:active,
-.user-block .enter:active .icon-login {
+.enter:active .icon-login {
 	color: #c5c5c5;
 }
 
@@ -648,23 +648,23 @@ input[type="search"]:-ms-input-placeholder {
 	text-align: center;
 }
 
-li.main-nav-item:first-child a {
+.main-nav-item:first-child a {
 	padding: 20px 31px 20px 51px;
 }
 
-li.main-nav-item:nth-child(3) a {
+.main-nav-item:nth-child(3) a {
 	padding: 20px 27px 20px 26px;
 }
 
-li.main-nav-item:nth-child(5) a {
+.main-nav-item:nth-child(5) a {
 	padding: 20px 34px 19px 25px;
 }
 
-li.main-nav-item:nth-child(6) a {
+.main-nav-item:nth-child(6) a {
 	padding: 20px 30px 20px 28px;
 }
 
-li.main-nav-item:nth-child(7) a {
+.main-nav-item:nth-child(7) a {
 	padding: 20px 54px 20px 32px;
 }
 
@@ -694,6 +694,7 @@ li.main-nav-item:nth-child(7) a {
 }
 
 .promo h4 {
+	width: 150px;
 	margin: 0;
 	margin-bottom: 12px;
 	font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
@@ -729,14 +730,14 @@ li.main-nav-item:nth-child(7) a {
 	background-color: rgba( 0, 0, 0, 0.3);
 }
 
-.image-window {
+.promo::before {
+	content: " ";
 	position: absolute;
 	display: block;
 	top: 20px;
 	right: 26px;
 	width: 82px;
 	height: 80px;
-	background-color: red;
 }
 
 .materials {
@@ -744,12 +745,8 @@ li.main-nav-item:nth-child(7) a {
 	margin-right: 20px;
 }
 
-.materials span {
+.materials::before {
 	background: url("../img/sprite-promo.png") no-repeat 52% 3%;
-}
-
-.promo-new {
-	position: relative;
 }
 
 .flag-new:after {
@@ -767,7 +764,7 @@ li.main-nav-item:nth-child(7) a {
 	background-color: #4aafde;
 }
 
-.tool span {
+.tool::before {
 	background: url("../img/sprite-promo.png") no-repeat 96% 3%;
 }
 
@@ -775,7 +772,7 @@ li.main-nav-item:nth-child(7) a {
 	background-color: #cc79d1;
 }
 
-.technics span {
+.technics::before {
 	background: url("../img/sprite-promo.png") no-repeat 7% 3%;
 }
 
@@ -783,7 +780,7 @@ li.main-nav-item:nth-child(7) a {
 	background-color: #85d179;
 }
 
-.discounts span {
+.discounts::before {
 	background: url("../img/sprite-promo.png") no-repeat 95% 83%;
 }
 
@@ -791,7 +788,7 @@ li.main-nav-item:nth-child(7) a {
 	background-color: #f6b22d;
 }
 
-.delivery span {
+.delivery::before {
 	background: url("../img/sprite-promo.png") no-repeat 8% 83%;
 }
 
@@ -957,6 +954,7 @@ input[name="promo"] {
 
 .popular-goods-header h2,
 .popular-makers-header h2 {
+	width: 620px;
 	float: left;
 	margin: 0;
 	margin-top: 5px;
@@ -1282,6 +1280,10 @@ input[name="services"] {
 	border-top: 1px solid #405069;
 }
 
+.services-slider-controls label:hover {
+	background-color: #293449;
+}
+
 .services-slider-controls:after {
 	content: " ";
 	position: absolute;
@@ -1310,6 +1312,7 @@ input[name="services"] {
 
 .service-slide {
 	min-height: 290px;
+	padding-right: 240px;
 	overflow: hidden;
 }
 
@@ -1556,6 +1559,7 @@ input[name="services"] {
 
 .footer-main-navigation a:active,
 .footer-sub-navigation a:active {
+	text-decoration: none;
 	opacity: 0.5;
 	filter: alpha(opacity=50);
 }
@@ -1633,6 +1637,7 @@ input[name="services"] {
 
 .footer-feedback a:active,
 .footer-developed a:active {
+	text-decoration: none;
 	color: #ee3643;
 }
 
@@ -2277,6 +2282,8 @@ a:active .icon-down-dir {
 
 .closing-cross {
 	float: right;
+	width: 35px;
+	height: 35px;
 	color: #ee3643;
 	font-size: 65px;
 	line-height: 25px;
@@ -2285,6 +2292,8 @@ a:active .icon-down-dir {
 	border: none;
 	background: none;
 	outline: none;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .success-add {
@@ -2324,14 +2333,14 @@ a:active .icon-down-dir {
 	background-color: #ba2732;
 }
 
-.popup-control button.content-btn {
+.popup-control .closing-cart {
 	width: 220px;
 	margin-left: 20px;
 	color: #000000;
 	background-color: #ffffff;
 }
 
-.popup-control button.content-btn:hover {
+.popup-control .content-btn:hover {
 	color: #ffffff;
 }
 
@@ -2358,38 +2367,38 @@ a:active .icon-down-dir {
 @-webkit-keyframes bounce {
 	0% {
 		-webkit-transform: translateY(-2000px);
-		        transform: translateY(-2000px);
+		transform: translateY(-2000px);
 	}
 	70% {
 		-webkit-transform: translateY(30px);
-		        transform: translateY(30px);
+		transform: translateY(30px);
 	}
 	90% {
 		-webkit-transform: translateY(-10px);
-		        transform: translateY(-10px);
+		transform: translateY(-10px);
 	}
 	100% {
 		-webkit-transform: translateY(0);
-		        transform: translateY(0);
+		transform: translateY(0);
 	}
 }
 
 @keyframes bounce {
 	0% {
 		-webkit-transform: translateY(-2000px);
-		        transform: translateY(-2000px);
+		transform: translateY(-2000px);
 	}
 	70% {
 		-webkit-transform: translateY(30px);
-		        transform: translateY(30px);
+		transform: translateY(30px);
 	}
 	90% {
 		-webkit-transform: translateY(-10px);
-		        transform: translateY(-10px);
+		transform: translateY(-10px);
 	}
 	100% {
 		-webkit-transform: translateY(0);
-		        transform: translateY(0);
+		transform: translateY(0);
 	}
 }
 
@@ -2397,7 +2406,7 @@ a:active .icon-down-dir {
 	0%,
 	100% {
 		-webkit-transform: translateX(0);
-		        transform: translateX(0);
+		transform: translateX(0);
 	}
 	10%,
 	30%,
@@ -2405,14 +2414,14 @@ a:active .icon-down-dir {
 	70%,
 	90% {
 		-webkit-transform: translateX(-10px);
-		        transform: translateX(-10px);
+		transform: translateX(-10px);
 	}
 	20%,
 	40%,
 	60%,
 	80% {
 		-webkit-transform: translateX(10px);
-		        transform: translateX(10px);
+		transform: translateX(10px);
 	}
 }
 
@@ -2420,7 +2429,7 @@ a:active .icon-down-dir {
 	0%,
 	100% {
 		-webkit-transform: translateX(0);
-		        transform: translateX(0);
+		transform: translateX(0);
 	}
 	10%,
 	30%,
@@ -2428,14 +2437,14 @@ a:active .icon-down-dir {
 	70%,
 	90% {
 		-webkit-transform: translateX(-10px);
-		        transform: translateX(-10px);
+		transform: translateX(-10px);
 	}
 	20%,
 	40%,
 	60%,
 	80% {
 		-webkit-transform: translateX(10px);
-		        transform: translateX(10px);
+		transform: translateX(10px);
 	}
 }
 
